@@ -1,0 +1,147 @@
+@import "../../../../css/_config";
+
+.edit-modal .modal {
+  min-height: 170px;
+}
+
+.edit-modal-title {
+  font-weight: 600;
+  padding: 0 0 15px 0;
+
+  &.reject {
+    color: $redff5;
+  }
+
+  span {
+    display: inline-block;
+    height: 24px;
+    font-size: 12px;
+    color: $grey76;
+    background-color: $greend0;
+    border: 1px solid $greenb0;
+    border-radius: 4px;
+    padding: 1px 13.5px 1px 14.5px;
+  }
+}
+
+.edit-modal-body {
+  &.confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+  }
+
+  .edit-modal-info {
+    span {
+      display: inline-block;
+      padding: 0 0 0 8px;
+    }
+
+    &.submit {
+      span {
+        color: $blue0c;
+      }
+    }
+
+    &.publish {
+      span {
+        color: $green6d;
+      }
+    }
+
+    &.reject {
+      span {
+        color: $redff5;
+      }
+    }
+
+    &.delete {
+      span {
+        color: $redff4;
+      }
+    }
+  }
+
+  .loader-wrapper {
+    padding: 15px 0 0;
+    float: left;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: $grey8f;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+    background-color: $white;
+    padding: 10px 0 10px 0;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &.active {
+      color: $grey65;
+    }
+
+    &:focus {
+      border: 1px solid $blue0c;
+    }
+  }
+
+  .btn-confirmation {
+    font-size: 14px;
+    color: $blue0c;
+    letter-spacing: 0;
+    line-height: 20px;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 0px 0px;
+    background: none;
+
+    &.submit {
+      color: $blue2c;
+    }
+
+    &.publish {
+      color: $green6d;
+    }
+
+    &.reject {
+      color: $redff5;
+    }
+
+    &.delete {
+      color: $redff4;
+    }
+  }
+
+  .confirmation-image {
+    width: 120px;
+    height: 120px;
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+
+    &.publish {
+      background-image: url("../../../../img/img_publish.svg");
+    }
+
+    &.submit {
+      background-image: url("../../../../img/img_submit.svg");
+    }
+
+    &.reject {
+      background-image: url("../../../../img/img_reject.svg");
+    }
+
+    &.delete {
+      background-image: url("../../../../img/img_delete.svg");
+    }
+  }
+}

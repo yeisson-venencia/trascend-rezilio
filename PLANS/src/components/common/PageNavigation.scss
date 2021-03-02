@@ -1,0 +1,172 @@
+@import "../../css/_config";
+
+.page-navigation {
+  width: 100%;
+  background-color: $greyfa;
+  padding: 50px 0 30px 0;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-numbers-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $grey20;
+    cursor: pointer;
+
+    &.previous-only {
+      padding-right: 100px;
+    }
+
+    &.next-only {
+      padding-left: 100px;
+    }
+
+    .page-number {
+      width: 32px;
+      height: 32px;
+      letter-spacing: 0.4px;
+      line-height: 32px;
+      border-radius: 4px;
+      background-color: $white;
+    }
+
+    .active {
+      background-color: $blue0c;
+      color: $white;
+    }
+
+    :not(.active):not(:first-of-type):not(:last-of-type) {
+      &:hover {
+        background-color: $greyf1;
+      }
+    }
+
+    .next-pages {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      padding: 10px;
+      cursor: default;
+    }
+  }
+
+  .page-numbers-nav-btn-wrapper {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+
+    * {
+      &:hover {
+        background-color: $greyf1;
+      }
+    }
+
+    &.previous {
+      text-align: right;
+      left: 9px;
+    }
+
+    &.next {
+      text-align: left;
+      right: 9px;
+    }
+
+    .page-numbers-forward,
+    .page-numbers-rewind {
+      position: relative;
+      height: 32px;
+      border-radius: 4px;
+      padding: 8px 0 8px 0;
+      display: inline-flex;
+      align-items: center;
+
+      &:hover {
+        span {
+          color: $grey20;
+        }
+        .triangle-rewind {
+          background-image: url("../../img/triangle_rewind_dark.svg");
+        }
+
+        .triangle-forward {
+          background-image: url("../../img/triangle_forward_dark.svg");
+        }
+      }
+    }
+
+    .page-numbers-forward {
+      span {
+        padding: 0 21px 0 9px; // 4px from 10px triangle positioned 7px from right
+        color: $grey76;
+      }
+
+      .triangle-forward {
+        position: absolute;
+        right: 7px;
+        height: 10px;
+        width: 10px;
+        background-image: url("../../img/triangle_forward.svg");
+        background-size: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 7px auto;
+      }
+    }
+
+    .page-numbers-rewind {
+      span {
+        padding: 0 9px 0 21px; // 4px from 10px triangle positioned 7px from left
+        color: #767676;
+      }
+
+      .triangle-rewind {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        left: 7px;
+        background-image: url("../../img/triangle_rewind.svg");
+        background-size: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 7px auto;
+      }
+    }
+  }
+
+  .page-numbers-fast-rewind,
+  .page-numbers-fast-forward {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .page-numbers-fast-rewind {
+    background-image: url("../../img/triangle_fast_rewind.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("../../img/triangle_fast_rewind_dark.svg");
+    }
+  }
+
+  .page-numbers-fast-forward {
+    background-image: url("../../img/triangle_fast_forward.svg");
+
+    &:hover {
+      background-image: url("../../img/triangle_fast_forward_dark.svg");
+    }
+  }
+}

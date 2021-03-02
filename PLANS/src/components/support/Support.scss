@@ -1,0 +1,93 @@
+@import "../../css/_config";
+$path: "../../";
+
+.support {
+  h1 {
+    font-size: 42px;
+    color: $grey65;
+    text-align: center;
+    font-weight: 300;
+    margin: auto auto 50px auto;
+    width: 250px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 102px auto 64px auto;
+      width: auto;
+    }
+  }
+
+  .box {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto 15px;
+    width: 120px;
+    cursor: pointer;
+
+    @include media-breakpoint-up(lg) {
+      width: 165px;
+    }
+
+    .icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 40px 28px;
+      background-color: $blueee;
+      border: 1px solid $blueee;
+      border-radius: 45px;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 30px;
+
+      &.email {
+        background-image: url($path + "img/ico_email_support.svg");
+      }
+
+      &.chatbox {
+        background-image: url($path + "img/ico_chatbox.svg");
+      }
+    }
+
+    .text {
+      text-align: center;
+      color: $grey65;
+      font-size: 20px;
+      font-weight: 300;
+      height: 30px;
+    }
+
+    &.active {
+      .icon {
+        &.email {
+          background-image: url($path + "img/ico_email_support_onhover.svg");
+          background-color: $blue2c;
+        }
+
+        &.chatbox {
+          background-color: $blue2c;
+        }
+      }
+
+      .text {
+        color: $blue2c;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .back-home {
+    width: auto;
+    margin: 100px auto 40px auto;
+    font-size: 20px;
+    font-weight: 300;
+    color: $blue2c;
+
+    .link-back-home {
+      background-image: url($path + "img/ico_return_home.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 7px 12px;
+      text-decoration: none;
+      padding-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,210 @@
+@import "../../../css/_config";
+
+.action-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  text-transform: capitalize;
+  outline: none;
+  transition: box-shadow 0.6s;
+  z-index: 1;
+  overflow: hidden;
+
+  &.submit {
+    &:before {
+      background-color: $blue34;
+    }
+  }
+
+  &.publish {
+    &:before {
+      background-color: $green5a;
+    }
+  }
+
+  &.save {
+    &:before {
+      background-color: $grey53;
+    }
+  }
+
+  &.delete {
+    &:before {
+      background-color: $redc3;
+    }
+  }
+
+  &:active:not(.save-progress):not(:disabled) {
+    &:before {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: " ";
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    transform-style: flat;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 100%;
+    z-index: -1;
+    transition: width 0.1s ease, height 0.1s ease;
+  }
+
+  &.save-progress {
+    &:hover {
+      .action-button-text {
+        color: $btn-secondary-hover;
+      }
+    }
+    .action-button-text {
+      color: $btn-secondary;
+    }
+    .action-button-progress {
+      position: absolute;
+      display: inline-flex;
+      justify-content: center;
+      width: calc(100% - 15px);
+
+      div {
+        @include global-animation();
+
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $white;
+      }
+      div:nth-child(1) {
+        margin-right: 6px;
+        -webkit-animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+      }
+      div:nth-child(2) {
+        margin-right: 6px;
+        -webkit-animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+      }
+      div:nth-child(3) {
+        -webkit-animation: scale 0.75s 0s infinite
+          cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 10px 0px rgba(26, 26, 26, 0.4);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:first-of-type):not(:last-of-type) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &.submit {
+    background-color: $btn-primary;
+    &:hover {
+      background-color: $btn-primary-hover;
+    }
+
+    &:disabled {
+      background-color: $btn-secondary-disabled;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.publish {
+    background-color: $btn-success;
+
+    &:hover {
+      background-color: $btn-success-hover;
+    }
+
+    &:disabled {
+      background-color: $btn-secondary-disabled;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.save {
+    background-color: $btn-secondary;
+
+    &:hover {
+      background-color: $btn-secondary-hover;
+    }
+
+    &:disabled {
+      background-color: $btn-secondary-disabled;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.delete,
+  &.reject {
+    background-color: $btn-danger;
+
+    &:hover {
+      background-color: $btn-danger-hover;
+    }
+
+    &:disabled {
+      background-color: $btn-secondary-disabled;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .action-button-icon {
+    min-width: 13px;
+    height: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+
+    &.submit {
+      background-image: url("../../../img/ico_arrow_up.svg");
+    }
+
+    &.publish {
+      background-image: url("../../../img/ico_check_mark.svg");
+    }
+
+    &.save {
+      background-image: url("../../../img/ico_disk.svg");
+    }
+
+    &.delete,
+    &.reject {
+      background-image: url("../../../img/ico_cross.svg");
+    }
+  }
+  .action-button-text {
+    padding: 0px 0px 0px 10px;
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../../css/_config";
+
+.version-loader {
+  width: 30px;
+  height: 30px;
+  background-size: 20px 20px;
+  margin: 0px 0 0px 70px;
+
+  @include media-breakpoint-down(md) {
+    margin: 0px 0 0px 20px;
+  }
+}
+
+.version-info {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  width: 100%;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  .info {
+    position: relative;
+    display: inline-flex;
+    align-content: flex-start;
+    height: 24px;
+    width: calc(70% - 55px);
+    max-width: 548px;
+    padding: 0px 15px 0px 15px;
+    margin: 0 15px 0 55px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $greya1;
+    font-weight: 400;
+    background-color: $greyfb;
+    border-radius: 4px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0px 0 0px 0px;
+    }
+
+    &.current {
+      .icon {
+        svg {
+          path {
+            fill: $green63;
+          }
+        }
+      }
+    }
+
+    .user {
+      @include ellipsis;
+
+      margin: 0 auto 0 15px;
+      span {
+        &:last-of-type {
+          color: $grey3d;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        margin: 0px 20px 0px 10px;
+      }
+    }
+
+    .update {
+      @include ellipsis;
+
+      margin: 0 12px 0 15px;
+      span {
+        &:last-of-type {
+          color: $grey3d;
+        }
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .icon-arrow-down {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 12px 7px;
+      background-image: url("../../../img/ico_arrow_down.svg");
+    }
+
+    &:hover {
+      .icon-arrow-down {
+        background-image: url("../../../img/ico_arrow_down.svg");
+      }
+    }
+
+    &.highlight {
+      background-color: $yellowf7;
+    }
+
+    .context-menu {
+      position: absolute;
+      top: 24px;
+      right: 0;
+      width: calc(100% - 31px);
+      border: 1px solid $greye8;
+      padding: 7px 17px 9px 15px;
+
+      ul {
+        width: 100%;
+        padding: 0;
+
+        li {
+          width: 100%;
+          font-size: 14px;
+          padding: 0;
+          display: inline-flex;
+          align-content: space-between;
+
+          span {
+            &:nth-of-type(2) {
+              margin: 0 auto 0 0;
+              padding: 0px 0px 0px 15px;
+            }
+            svg {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #version-tooltip,
+  #toggle-tooltip {
+    background-color: $black;
+    opacity: 1;
+    color: $white;
+    width: 154px;
+    text-align: center;
+    border: none;
+
+    &::before {
+      content: "";
+      border-top: 1px solid transparent;
+    }
+
+    &.disabled {
+      display: none;
+    }
+  }
+}

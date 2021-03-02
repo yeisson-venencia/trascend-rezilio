@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="7px" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pagination</title>
+    <g id="Pagination" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1" transform="translate(-485.000000, -22.000000)">
+            <rect id="Rectangle" x="475" y="9" width="32" height="32" rx="4"></rect>
+            <g id="noun_fast-forward_2584204-copy-2" transform="translate(485.000000, 22.000000)" fill="#202124">
+                <path d="M5.66666667,4.244 C6.11113333,3.9874 6.11113333,3.34593333 5.66666667,3.08933333 L1.16666667,0.49124 C0.7222,0.23464 0.166666667,0.555393333 0.166666667,1.06859333 L0.166666667,6.26473333 C0.166666667,6.77793333 0.7222,7.09866667 1.16666667,6.84206667 L5.66666667,4.244 Z" id="Shape"></path>
+            </g>
+            <g id="noun_fast-forward_2584204-copy-3" transform="translate(492.000000, 22.000000)" fill="#202124">
+                <path d="M5.66666667,4.244 C6.11113333,3.9874 6.11113333,3.34593333 5.66666667,3.08933333 L1.16666667,0.49124 C0.7222,0.23464 0.166666667,0.555393333 0.166666667,1.06859333 L0.166666667,6.26473333 C0.166666667,6.77793333 0.7222,7.09866667 1.16666667,6.84206667 L5.66666667,4.244 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

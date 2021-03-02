@@ -1,0 +1,41 @@
+@import "../../../css/_config";
+
+.plan-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  .item {
+    font-size: 10px;
+    line-height: 20px;
+    color: $greya1;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue0c;
+    }
+
+    &:last-child {
+      color: $grey65;
+      cursor: initial;
+    }
+  }
+
+  .item-empty {
+    font-size: 10px;
+    line-height: 20px;
+    color: $greya1;
+  }
+
+  .separator {
+    font-size: 10px;
+    line-height: 20px;
+    color: $greya1;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,234 @@
+@import "../../css/_config";
+$path: "../../";
+
+.mfa-layout {
+  .mfa-copy {
+    text-align: left;
+
+    .border-bottom {
+      border-bottom: 1px solid $greyd8;
+      margin: 0 0 30px 0;
+    }
+
+    .section-title {
+      padding: 40px 0 0 0;
+
+      @include media-breakpoint-up(lg) {
+        padding: 110px 20% 0 0;
+        background-image: url($path + "img/ico_lock_mfa.svg");
+        background-position: left 40px;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: $blue09;
+        font-weight: 300;
+        line-height: 38px;
+        margin: 0 0 50px 0;
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+        margin: 0 0 30px 0;
+        padding: 0;
+
+        &.highlight {
+          font-size: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .section-info {
+      padding: 110px 0 0 0;
+
+      @include media-breakpoint-down(lg) {
+        padding: 110px 0 0 0;
+        background-image: url($path + "img/ico_lock_mfa.svg");
+        background-position: left 40px;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: $blue09;
+        font-weight: 300;
+        line-height: 38px;
+        margin: 0 0 50px 0;
+
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+
+      .box {
+        box-shadow: 0px 3px 8px -1px rgba(#1a1a1a, 0.16);
+        border-radius: 4px;
+
+        h2 {
+          display: block;
+          background-image: url($path + "img/ico_mfa_important.svg");
+          background-position: 20px center;
+          background-repeat: no-repeat;
+          background-size: 30px auto;
+          padding: 11px 20px 11px 60px;
+          margin: 0;
+          background-color: #ffefee;
+          font-size: 22px;
+          line-height: 38px;
+          font-weight: 300;
+          color: $redff5;
+          border-radius: 4px 4px 0 0;
+        }
+
+        .text {
+          padding: 20px;
+
+          p {
+            font-size: 16px;
+            line-height: 28px;
+            color: $black;
+          }
+        }
+      }
+    }
+
+    .section-options {
+      padding: 0;
+
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+        color: $black;
+        font-weight: 500;
+      }
+
+      .box {
+        padding-right: 10%;
+        padding-bottom: 30px;
+
+        h3 {
+          background-position: left 25px;
+          background-repeat: no-repeat;
+          background-size: 50px auto;
+          padding: 65px 0 0 0;
+          margin: 35px 0 15px 0;
+          font-size: 22px;
+          line-height: 28px;
+          color: $black;
+          font-weight: 500;
+
+          @include media-breakpoint-down(lg) {
+            margin: 0px 0 15px 0;
+          }
+
+          &.o1 {
+            background-image: url($path + "img/ico_mfa_option1.svg");
+          }
+          &.o2 {
+            background-image: url($path + "img/ico_mfa_option2.svg");
+            background-position: left 6px;
+            background-size: 35px auto;
+          }
+          &.o3 {
+            background-position: left 12px;
+            background-image: url($path + "img/ico_mfa_option3.svg");
+          }
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 28px;
+          color: $black;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .section-app {
+      margin-bottom: 100px;
+
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+        color: $black;
+        margin: 15px 0 15px 0;
+      }
+
+      h3 {
+        font-size: 22px;
+        line-height: 28px;
+        color: $black;
+        margin: 15px 0 15px 0;
+      }
+
+      p,
+      .text {
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+      }
+
+      .highlight {
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+        font-weight: 600;
+      }
+
+      ul {
+        li {
+          color: $blue0c;
+          padding: 0 0 0 10px;
+        }
+      }
+
+      img {
+        width: 140px;
+        height: 140px;
+        margin: 0 20px 0 0;
+        float: left;
+
+        @include media-breakpoint-down(lg) {
+          display: block;
+          float: none;
+        }
+      }
+
+      button {
+        margin: 15px 0 0 0;
+        line-height: 40px;
+        color: $white;
+        background-color: $blue0c;
+        border: 1px solid $blue0c;
+        padding: 0px 15px;
+        border-radius: 4px;
+
+        &.mobile {
+          @include media-breakpoint-up(lg) {
+            display: none;
+          }
+        }
+
+        &.desktop {
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .nobr {
+      white-space: nowrap;
+    }
+  }
+}

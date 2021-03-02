@@ -1,0 +1,58 @@
+@import "../../css/_config";
+
+.page-navigation {
+  background-color: $greyfa;
+  padding: 50px 0 30px 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .page-numbers-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; // temporary solution until full design is integrated
+    text-align: center;
+    color: $grey20;
+    cursor: pointer;
+    margin: 0 30px;
+
+    &.previous-only {
+      padding-right: 100px;
+    }
+
+    &.next-only {
+      padding-left: 100px;
+    }
+
+    .page-number {
+      width: 32px;
+      height: 32px;
+      letter-spacing: 0.4px;
+      line-height: 32px;
+      border-radius: 4px;
+      background-color: $white;
+    }
+
+    .active {
+      background-color: $blue0c;
+      color: $white;
+    }
+  }
+  .page-numbers-nav-btn-wrapper {
+    cursor: pointer;
+    width: 100px;
+    line-height: 32px;
+
+    &.previous {
+      text-align: right;
+    }
+
+    &.next {
+      text-align: left;
+    }
+  }
+}

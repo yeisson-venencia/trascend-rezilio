@@ -1,0 +1,65 @@
+@import "../../css/_config";
+$path: "../../";
+
+.outdated {
+  position: fixed;
+  top: 0px;
+  width: 80vw;
+  margin: 0 10vw;
+  background-color: $white;
+  z-index: 99;
+  padding: 15px 40px 10px 40px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 5, 0.15);
+  border-top: 2px solid #ffab2b;
+  border-radius: 4px;
+
+  .close {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-indent: -9999px;
+    background-image: url($path + "img/close_black.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $greyf1;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    color: $grey4e;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+
+    span.orange {
+      font-weight: 600;
+      color: #ffab2b;
+    }
+  }
+
+  .button {
+    display: inline-flex;
+    height: 42px;
+    border-radius: 4px;
+    line-height: 42px;
+    color: $blue0c;
+    font-size: 16px;
+    padding: 0 25px;
+    margin: 0 5px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $greyf1;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="REZILIO-PLANS-v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Page---Index-Copy-14" transform="translate(-1064.000000, -139.000000)" fill="#656565">
+            <g id="01-Components-/-03-Dropdown-Menus-/-02-Left-Icon-/-01-Option-/-01-Normal-Copy-3" transform="translate(1060.000000, 137.000000)">
+                <g id="02-Icons-/-20x20-/-ic20-file">
+                    <path d="M11,2 C11.2652165,2 11.5195704,2.10535684 11.7071068,2.29289322 L15.7071068,6.29289322 C15.8946432,6.4804296 16,6.73478351 16,7 L16,15 C16,16.6568542 14.6568542,18 13,18 L7,18 C5.34314575,18 4,16.6568542 4,15 L4,5 C4,3.34314575 5.34314575,2 7,2 L11,2 Z M9.999,4 L7,4 C6.44771525,4 6,4.44771525 6,5 L6,15 C6,15.5522847 6.44771525,16 7,16 L13,16 C13.5522847,16 14,15.5522847 14,15 L14,8 L11,8 C10.4871642,8 10.0644928,7.61395981 10.0067277,7.11662113 L10,7 L9.999,4 Z" id="Icon-Color"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

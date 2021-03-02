@@ -1,0 +1,31 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+node_modules*
+
+# testing
+/coverage
+
+# production
+/build
+
+# phpstorm
+/.idea
+.idea/workspace.xml
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# PhpStorm
+/.idea/workspace.xml
+.idea/workspace.xml
+
+
+# ignore json files
+/src/mock/*.json
+!/src/mock/shared-*.json

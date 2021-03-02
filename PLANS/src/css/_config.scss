@@ -1,0 +1,147 @@
+@import "./_bootstrap";
+
+$greyae: #aeacb0;
+$grey4e: #4e4e4e;
+$grey65: #656565;
+$greyc7: #c7c7c7;
+$greye8: #e8e8e8;
+$greyd8: #d8d8d8;
+$greyd6: #d6d6d6;
+$greydc: #dcdcdc;
+$greya1: #a1a1a1;
+$greyf1: #f1f1f1;
+$grey97: #979797;
+$grey8f: #8fa0a5;
+$grey8f8: #8f8f8f;
+$grey6d: #6d8086;
+$greyf7: #f7f7f7;
+$greyf6: #f6f6f6;
+$greyf5: #f5f5f7;
+$greyfa: #fafbfd;
+$greye4: #e4e4e4;
+$greyed: #ededed;
+$greye7: #e7e9ed;
+$greye9: #e9e9e9;
+$greye9b: #e9ebf0;
+
+$grey03: #030303;
+$grey20: #202124;
+$grey41: #414040;
+$grey76: #767676;
+$grey84: #848484;
+$grey1c: #1c1c1c;
+$grey3d: #3d5056;
+$grey3b: #3b3b3b;
+$grey5f: #5f5f5f;
+$grey53: #535252;
+$grey6f: #6f6f6f;
+$greybd: #bdbcbc;
+$greyfb: #fbfbfb;
+
+$black: #1a1a1a;
+$white: #ffffff;
+
+$blue23: #2346aa;
+$blue2c: #2c5de5;
+$blue26: #2648a4;
+$blue34: #3484e2;
+$blue39: #3989c9;
+$blue51: #515e62;
+$blueee: #eef3ff;
+$blue09: #093b54;
+$blue0c: #0c64ce;
+$bluea0: #a0edff;
+$blueaa: #aac4cc;
+$bluecf: #cff6ff;
+$blue91: #91adfa;
+
+$redc3: #c3130e;
+$redde: #de1c22;
+$redff4: #ff413c;
+$redff5: #ff524e;
+$redff6: #ff6460;
+$redf9: #f9d3d4;
+$redffd: #ffdfde;
+$redffe: #ffefee;
+
+$green00: #008556;
+$greenb0: #b0edd2;
+$greend0: #d0ffea;
+$greend6: #d6f3e2;
+$green5a: #5a8c12;
+$green63: #63cd82;
+$green6d: #6d9d28;
+$green90: #90bc50;
+
+$yellowff: #ffe1be;
+$yellowf7: #fff7d6;
+
+$orangeff: #ffab2b;
+
+$btn-primary: #6baaf4;
+$btn-primary-hover: #4495f4;
+$btn-success: #90bc50;
+$btn-success-hover: #6d9d28;
+$btn-secondary: $grey84;
+$btn-secondary-hover: $grey5f;
+$btn-secondary-disabled: $greydc;
+$btn-secondary-1: $greybd;
+$btn-danger: $redff6;
+$btn-danger-hover: $redff4;
+
+$colors: #7f1818, #ef2629, #ff6634, #fc9100, #f7d74f, #aa7830, #960087, #a600c8,
+  #e95ded, #e184f4, #ed7caa, #7951f4, #11498a, #154be5, #3989c9, #4f7ef7,
+  #69b3e3, #40b2f2, #006e79, #197b30, #5fc96b, #63717c, #b1b6ba, #ed4087;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipsis-lines($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// loading animation
+
+$loader-color: $white !default;
+
+@mixin global-animation() {
+  animation-fill-mode: both;
+}
+
+// ball pulse animation
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

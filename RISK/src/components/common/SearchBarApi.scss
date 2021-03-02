@@ -1,0 +1,68 @@
+@import "../../css/_config";
+
+.search-bar-api {
+  display: inline-flex;
+  flex-direction: row;
+  text-align: right;
+  position: relative;
+  margin: auto 0 auto 0px;
+  width: 400px;
+  height: 40px;
+
+  input {
+    width: 360px;
+    height: 40px;
+    font-size: 16px;
+    color: $grey8f;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid $greyf1;
+    padding: 0px 40px 0 11px;
+    outline: none;
+    background-color: $white;
+
+    &:focus {
+      border: 1px solid $blue0c;
+      color: $grey3d;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &.search {
+      background-image: url("../../img/ico_search_grey.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+      background-color: $greye9;
+    }
+
+    &.active {
+      background-color: $blue0c;
+      border-top: 1px solid $blue0c;
+      border-bottom: 1px solid $blue0c;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.close {
+      background-image: url("../../img/close_grey.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 10px auto;
+      background-color: transparent;
+      right: 40px;
+    }
+  }
+}

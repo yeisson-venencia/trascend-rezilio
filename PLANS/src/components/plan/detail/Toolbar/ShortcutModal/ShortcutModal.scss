@@ -1,0 +1,52 @@
+@import "../../../../../css/_config";
+
+.shortcut-modal-body {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
+
+  .shortcut-modal-message {
+    margin: auto 0 auto 0px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: $grey8f;
+    border-radius: 5px;
+    border: 1px solid $greye4;
+    padding: 0px 44px 0 6px;
+    outline: none;
+    background-color: $white;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &.active {
+      color: $grey65;
+    }
+
+    &:focus {
+      border: 1px solid $blue0c;
+    }
+  }
+
+  .action {
+    font-size: 14px;
+    color: $blue0c;
+    letter-spacing: 0;
+    line-height: 20px;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    padding: 10px 0 0 0;
+
+    &.delete {
+      color: $redff4;
+    }
+  }
+}

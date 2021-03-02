@@ -1,0 +1,83 @@
+@import "./_config";
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  background-color: $white;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Consolas, "Courier New", "monospace";
+}
+
+.__react_component_tooltip,
+.__react_component_tooltip.place-top.type-dark {
+  line-height: 16px;
+  background: $white;
+  color: $black;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid $greyc7;
+  opacity: 1;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0);
+  text-align: left;
+  padding: 2px 15px;
+
+  &:before {
+    border-top-color: $greyc7;
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -9px;
+  }
+
+  &:after {
+    border-top-color: $white !important;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -10px;
+    border-top-width: 8px;
+  }
+
+  &.dark {
+    background: $black;
+    color: $white;
+    border: 1px solid $black;
+
+    &:before {
+      border-top-color: $black;
+    }
+
+    &:after {
+      border-top-color: $black !important;
+    }
+  }
+}
+
+// ZOHO configuration
+.zsiq_theme1 div.zsiq_cnt {
+  display: none !important;
+}
+
+// IE fixes
+.internetexplorer {
+  /* IE10+ specific styles go here */
+  .main_wrapper {
+    height: 100vh !important;
+  }
+
+  .main_wrapper .top .lang-open {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+  }
+}

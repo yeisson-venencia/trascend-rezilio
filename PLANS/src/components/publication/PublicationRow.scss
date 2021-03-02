@@ -1,0 +1,133 @@
+@import "../../css/_config";
+
+tr.publication-row {
+  text-align: left;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 4px 0;
+  border: 1px solid $greyf7;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include media-breakpoint-down(md) {
+    td.hide {
+      display: none !important;
+    }
+  }
+
+  td {
+    background-color: $white;
+  }
+
+  .title {
+    @include ellipsis;
+    font-size: 16px;
+    color: $grey20;
+    line-height: 20px;
+    margin: 5px 0 5px 0;
+    padding: 0 15px 0 15px;
+
+    .ico {
+      margin: 0 10px 0 0;
+      float: left;
+    }
+
+    .breadcrumb {
+      @include ellipsis;
+      font-size: 12px;
+      line-height: 20px;
+      color: $grey6d;
+      direction: rtl;
+
+      &:after {
+        // do to ltr ellipsis, read
+        // https://stackoverflow.com/questions/20798667/why-is-a-trailing-punctuation-mark-rendered-at-the-start-with-directionrtl
+        content: "\200e";
+      }
+    }
+  }
+
+  .tag {
+    display: flex;
+    min-width: 50px;
+
+    .icon {
+      @include ellipsis;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 900;
+      text-align: center;
+      border-radius: 11px;
+      padding: 0 5px;
+      display: inline-flex;
+      margin: auto auto auto 0;
+      color: $grey6d;
+      border: 2px solid $grey6d;
+      cursor: default;
+    }
+
+    .no-icon {
+      font-size: 30px;
+      line-height: 18px;
+      padding: 0 0 0 13px;
+      color: $greyd8;
+    }
+  }
+
+  .lang {
+    font-size: 12px;
+    color: $grey6d;
+    text-transform: capitalize;
+  }
+
+  .status {
+    @include ellipsis;
+    color: $grey6d;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0 5px 0;
+    font-weight: 600;
+    padding: 0 15px 0 0;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+    padding: 0px 10px 0px 16px;
+
+    &.MODE_ACCEPTED {
+      background-image: url("../../img/ico_accept_green.svg");
+      color: $green90;
+    }
+
+    &.MODE_REJECTED {
+      background-image: url("../../img/ico_reject_red.svg");
+      color: $redff5;
+    }
+  }
+
+  .info {
+    @include ellipsis;
+    color: $grey6d;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 0 5px 0;
+    padding: 0 15px 0 0;
+  }
+
+  // active state only for pending
+  &.active.pending {
+    box-shadow: 0px 3px 8px -1px rgba(#1a1a1a, 0.16);
+    border-radius: 4px;
+
+    td {
+      background-color: $white;
+    }
+
+    .title {
+      color: $blue0c;
+    }
+  }
+
+  &.journal {
+    cursor: initial;
+  }
+}

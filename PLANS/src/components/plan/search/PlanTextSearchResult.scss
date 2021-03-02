@@ -1,0 +1,87 @@
+@import "../../../css/_config";
+
+.search-result {
+  text-align: left;
+
+  .search-result-output-message {
+    font-size: 20px;
+    font-weight: 400;
+    color: $grey20;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-left: calc(180 / 1440 * 100%);
+
+    .search-result-term-wrapper {
+      font-weight: 400;
+      font-style: italic;
+
+      .search-result-term {
+        font-weight: 600;
+        color: $blue0c;
+      }
+    }
+  }
+
+  .search-result-list-wrapper {
+    margin-top: 18px;
+    min-height: 100vh;
+    width: calc(650 / 1440 * 100%);
+    margin-left: calc(180 / 1440 * 100%);
+    margin-right: calc(630 / 1440 * 100%);
+
+    .search-result-item {
+      margin-top: 20px;
+
+      .search-result-item-breadcrumb {
+        font-size: 10px;
+        color: $grey65;
+        letter-spacing: 0;
+        line-height: 24px;
+        font-weight: 400;
+      }
+
+      .search-result-item-title-wrapper {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .search-result-item-title {
+          font-size: 20px;
+          font-weight: 600;
+          color: $blue0c;
+          letter-spacing: 0;
+          line-height: 24px;
+          height: 100%;
+          cursor: pointer;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: $blue0c;
+          }
+        }
+
+        .icon {
+          height: 100%;
+
+          & + .search-result-item-title {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .search-result-item-description {
+        font-size: 16px;
+        color: $grey65;
+        letter-spacing: 0;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: left;
+      }
+    }
+  }
+
+  .page-navigation {
+    // see standalone stylesheet
+  }
+}

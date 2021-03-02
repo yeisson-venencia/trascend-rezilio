@@ -1,0 +1,66 @@
+@import "../../css/_config";
+$path: "../../";
+
+.select {
+  position: relative;
+  width: 300px;
+  height: 40px;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  .current {
+    @include ellipsis;
+    cursor: pointer;
+    display: block;
+    border: 1px solid $greye4;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: $grey20;
+    line-height: 38px;
+    background-color: $white;
+    padding: 0 30px 0 10px;
+    background-image: url($path + "img/toggle_close_black.svg");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    border-radius: 4px;
+  }
+
+  .items {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    background-color: $white;
+    border: 1px solid $greye4;
+    width: 300px;
+    border-radius: 4px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    .item {
+      line-height: 38px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      color: $grey20;
+      cursor: pointer;
+      padding: 0 30px 0 10px;
+
+      &:hover {
+        background-color: $greyd8;
+      }
+    }
+  }
+
+  &.open {
+    .items {
+      display: block;
+    }
+  }
+}

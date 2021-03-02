@@ -1,0 +1,183 @@
+@import "../../../css/_config";
+$path: "../../../";
+
+.plans {
+  padding-bottom: 50px;
+  background: $greyfa;
+  min-height: calc(100vh - 64px);
+
+  .max {
+    max-width: calc(191px * 5 + 5 * 20px + 30px) !important;
+  }
+
+  .centered {
+    display: flex;
+    height: 100vh;
+  }
+
+  .top {
+    margin: 20px 0 30px 0;
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .title {
+      font-size: 22px;
+      color: $grey20;
+      margin: 0 40px 0 0;
+      font-weight: 300;
+
+      @include media-breakpoint-down(md) {
+        @include ellipsis;
+        margin: 0 15px 0 0px;
+        font-size: 18px;
+      }
+    }
+
+    .button {
+      font-size: 14px;
+      line-height: 34px;
+      color: $grey8f;
+      border-radius: 17px;
+      margin: 0 0 0 24px;
+      cursor: pointer;
+
+      @include media-breakpoint-down(md) {
+        margin: 0 0 0 15px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $greye8;
+        color: $grey20;
+      }
+
+      &.list {
+        background-image: url($path + "img/ico_list_grey.svg");
+        background-position: 17px center;
+        background-repeat: no-repeat;
+        background-size: 16px auto;
+        padding: 0 17px 0 40px;
+
+        &.active,
+        &:hover {
+          background-image: url($path + "img/ico_list_black.svg");
+        }
+      }
+
+      &.geo {
+        background-image: url($path + "img/ico_marker_grey.svg");
+        background-position: 17px center;
+        background-repeat: no-repeat;
+        background-size: 12px auto;
+        padding: 0 17px 0 35px;
+
+        &.active,
+        &:hover {
+          background-image: url($path + "img/ico_marker_black.svg");
+        }
+      }
+    }
+  }
+
+  .coll-compact {
+    margin: 0 auto;
+    text-align: left;
+    min-height: 100vh;
+  }
+
+  .collection-wrapper {
+    &.white {
+      background: $white;
+    }
+
+    &.grey {
+      padding: 15px 0 0 0;
+    }
+  }
+
+  .coll-recent {
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    .toggle-title {
+      font-size: 12px;
+      color: $grey8f;
+      line-height: 30px;
+      margin: 0 auto 0 0;
+      padding: 0 15px 0 0;
+      background-image: url($path + "img/toggle_open.svg");
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: 8px 8px;
+      cursor: pointer;
+
+      &.show {
+        background-image: url($path + "img/toggle_close.svg");
+      }
+    }
+
+    .listing {
+      display: flex;
+      height: auto;
+      width: auto;
+
+      .plan-box {
+        width: 176px;
+
+        @include media-breakpoint-up(xl) {
+          width: 195px;
+        }
+
+        &:last-child {
+          margin: 0 0px 20px 0;
+        }
+      }
+    }
+  }
+
+  .tools {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 100%;
+
+    > div:nth-child(2n + 1) {
+      margin: 0 10px 0 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+
+      > div:nth-child(2n + 1) {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  .coll-listing {
+    margin: 20px auto 20px auto;
+    text-align: left;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 0px;
+    }
+
+    .reset {
+      color: $blueaa;
+      cursor: pointer;
+      display: inline-block;
+      margin: 10px 0 5px 10px;
+      padding: 0 0 0 16px;
+      background-image: url($path + "img/refresh_blue.svg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+    }
+  }
+}

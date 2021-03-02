@@ -1,0 +1,19 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 3, 3, 0.7);
+  z-index: 997;
+
+  // custom classnames
+  &.action,
+  &.confirmation {
+    z-index: 999;
+  }
+
+  &.none {
+    display: none;
+  }
+}

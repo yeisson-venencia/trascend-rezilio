@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>02 Icons / 16x16 / ic16-chevron-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Admin-/-Versionning-Copy-5" transform="translate(-214.000000, -105.000000)" fill="#FFFFFF">
+            <g id="02-Icons-/-16x16-/-ic16-chevron-left" transform="translate(210.000000, 103.000000)">
+                <path d="M10.70725,12.29325 C11.09825,12.68425 11.09825,13.31625 10.70725,13.70725 C10.31625,14.09825 9.68425,14.09825 9.29325,13.70725 L4.29325,8.70725 C3.90225,8.31625 3.90225,7.68425 4.29325,7.29325 L9.29325,2.29325 C9.68425,1.90225 10.31625,1.90225 10.70725,2.29325 C11.09825,2.68425 11.09825,3.31625 10.70725,3.70725 L6.41425,8.00025 L10.70725,12.29325 Z" id="Icon-Color"></path>
+            </g>
+        </g>
+    </g>
+</svg>

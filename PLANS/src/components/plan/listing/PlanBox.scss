@@ -1,0 +1,145 @@
+@import "../../../css/_config";
+$path: "../../../";
+
+.plan-box {
+  display: inline-table;
+  background-color: $white;
+  text-align: left;
+  width: 191px;
+  height: 220px;
+  margin: 0 20px 20px 0;
+  border-radius: 8px;
+  border: 1px solid $greye8;
+  cursor: pointer;
+
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+    width: calc(50% - 5px);
+
+    &:nth-child(odd) {
+      margin: 0 5px 10px 0;
+    }
+
+    &:nth-child(even) {
+      margin: 0 0 10px 5px;
+    }
+  }
+
+  .title {
+    @include ellipsis-lines(3);
+    font-size: 16px;
+    color: $grey20;
+    font-weight: 400;
+    margin: 15px 15px 8px 15px;
+    line-height: 20px;
+    height: 60px;
+  }
+
+  .address {
+    @include ellipsis-lines(3);
+    font-size: 12px;
+    line-height: 20px;
+    height: 60px;
+    font-weight: 400;
+    color: $grey6d;
+    margin: 0px 15px 0px 15px;
+  }
+
+  .hr {
+    border-top: 1px solid $greyf5;
+    margin: 8px 0 8px 0;
+    width: 100%;
+  }
+
+  .translation {
+    height: 14px;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      width: 28px;
+      height: 14px;
+      background-image: url($path + "img/ico_globe_grey.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 14px auto;
+
+      &:hover {
+        background-image: url($path + "img/ico_globe_black.svg");
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    .left {
+      margin: 0px 0px 0px 15px;
+      width: 30%;
+
+      @include media-breakpoint-down(md) {
+        width: 20%;
+      }
+
+      .tag {
+        @include ellipsis;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 900;
+        text-align: center;
+        border-radius: 11px;
+        padding: 0 5px;
+        color: $grey6d;
+        border: 2px solid $grey6d;
+      }
+    }
+
+    .right {
+      font-size: 10px;
+      text-align: left;
+      margin: 0 10px 0 15px;
+      font-weight: 400;
+      line-height: 16px;
+      width: 70%;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 12px;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 80%;
+      }
+
+      .sections,
+      .update {
+        color: $grey6d;
+      }
+    }
+  }
+
+  &.active {
+    box-shadow: 0px 6px 12px 0px rgba(#1a1a1a, 0.16);
+
+    .title {
+      color: $blue0c;
+    }
+
+    .address {
+      color: $grey3d;
+    }
+
+    .translation {
+      .icon {
+        background-image: url($path + "img/ico_globe_black.svg");
+      }
+    }
+
+    .info {
+      .sections,
+      .update {
+        color: $grey3d;
+      }
+    }
+  }
+}

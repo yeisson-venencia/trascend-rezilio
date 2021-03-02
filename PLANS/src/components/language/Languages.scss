@@ -1,0 +1,97 @@
+@import "../../css/_config";
+
+.top {
+  .lang {
+    margin: 20px 40px;
+    min-width: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .lang-open {
+    margin: 20px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 99;
+    height: 24px;
+    min-width: 100px;
+    overflow: visible;
+    display: inline-flex;
+    flex-direction: column;
+    white-space: nowrap;
+
+    .item {
+      cursor: pointer;
+      color: $greyd8;
+
+      &.current {
+        cursor: default;
+        color: $greyd8;
+
+        &:hover {
+          color: $greyd8;
+        }
+      }
+
+      &.active,
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.lang_mobile {
+  display: inline-flex;
+  position: relative;
+
+  .lang {
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    color: $blue2c;
+    margin: 30px 0 0 0;
+    position: absolute;
+    right: 0px;
+    width: 130px;
+  }
+
+  .lang-open {
+    margin-top: 4px;
+    font-weight: 600;
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 99;
+    //height: 24px;
+    overflow: visible;
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+    width: 130px;
+    margin: 30px 0 0 0;
+    position: absolute;
+    right: 0px;
+
+    .item {
+      cursor: pointer;
+      color: $greya1;
+
+      &.current {
+        cursor: default;
+        color: $greya1;
+
+        &:hover {
+          color: $greya1;
+        }
+      }
+
+      &.active,
+      &:hover {
+        color: $blue2c;
+      }
+    }
+  }
+}

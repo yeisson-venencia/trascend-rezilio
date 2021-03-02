@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape Copy 3</title>
+    <defs>
+        <polygon id="path-1" points="0 0 950 0 950 539 0 539"></polygon>
+        <polygon id="path-3" points="0 0 950 0 950 539 0 539"></polygon>
+        <path d="M4,0 L121,0 C123.209139,6.99853688e-15 125,1.790861 125,4 L125,53 C125,55.209139 123.209139,57 121,57 L4,57 C1.790861,57 3.75067146e-15,55.209139 0,53 L0,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,0 Z" id="path-5"></path>
+        <filter x="-33.6%" y="-52.6%" width="167.2%" height="247.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="12" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4,0 L121,0 C123.209139,6.99853688e-15 125,1.790861 125,4 L125,53 C125,55.209139 123.209139,57 121,57 L4,57 C1.790861,57 3.75067146e-15,55.209139 0,53 L0,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,0 Z" id="path-8"></path>
+        <path d="M4,0 L121,0 C123.209139,6.99853688e-15 125,1.790861 125,4 L125,53 C125,55.209139 123.209139,57 121,57 L4,57 C1.790861,57 3.75067146e-15,55.209139 0,53 L0,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,0 Z" id="path-10"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Page---Sub-Section-/-Menu-Drop-Down-/-Edit" transform="translate(-1301.000000, -292.000000)">
+            <g id="01-Components-/-03-Dropdown-Menus-/-999-Primitives-/-01-Base" transform="translate(475.000000, 235.000000)">
+                <g id="Fill">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Style" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <g id="Stroke">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <path stroke="#E8E8E8" d="M949.5,0.5 L949.5,538.5 L0.5,538.5 L0.5,0.5 L949.5,0.5 Z"></path>
+                </g>
+            </g>
+            <g id="Group-3" transform="translate(1291.000000, 284.000000)">
+                <g id="01-Components-/-03-Dropdown-Menus-/-999-Primitives-/-01-Base">
+                    <g id="Shadow">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Style">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                    <g id="Fill">
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <use id="Style" fill="#FFFFFF" xlink:href="#path-8"></use>
+                    </g>
+                    <g id="Stroke">
+                        <mask id="mask-11" fill="white">
+                            <use xlink:href="#path-10"></use>
+                        </mask>
+                        <path stroke="#E8E8E8" d="M121,0.5 C121.966498,0.5 122.841498,0.891750844 123.474874,1.52512627 C124.108249,2.15850169 124.5,3.03350169 124.5,4 L124.5,4 L124.5,53 C124.5,53.9664983 124.108249,54.8414983 123.474874,55.4748737 C122.841498,56.1082492 121.966498,56.5 121,56.5 L121,56.5 L4,56.5 C3.03350169,56.5 2.15850169,56.1082492 1.52512627,55.4748737 C0.891750844,54.8414983 0.5,53.9664983 0.5,53 L0.5,53 L0.5,4 C0.5,3.03350169 0.891750844,2.15850169 1.52512627,1.52512627 C2.15850169,0.891750844 3.03350169,0.5 4,0.5 L4,0.5 Z"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#E8E8E8" x="1" y="4" width="123" height="24"></rect>
+                <path d="M25.773641,11.248 L22.764457,8.22666667 C22.6179923,8.08266667 22.4235937,8 22.2185431,8 C22.0161555,8 21.8190939,8.08266667 21.6752922,8.22666667 L11.4414037,18.4773333 C11.3481989,18.5706667 11.281624,18.6826667 11.2470051,18.808 L10.0300165,23.0186667 C9.95278969,23.2853333 10.0273535,23.5733333 10.2217521,23.7706667 C10.3682169,23.92 10.5652785,24 10.770329,24 C10.8369039,24 10.9061418,23.9893333 10.9727166,23.9706667 L15.2148671,22.8026667 C15.3426909,22.768 15.4598627,22.6986667 15.5530675,22.6026667 L25.778967,12.3306667 C26.0745594,12.0346667 26.0745594,11.5493333 25.773641,11.248 Z M11.8861238,22.128 L12.4347007,20.2266667 L13.8167949,21.5946667 L11.8861238,22.128 Z M15.0071536,20.9786667 L13.0525155,19.0373333 L20.3331429,11.7466667 L22.274466,13.672 L15.0071536,20.9786667 Z M23.1772212,12.7653333 L21.2385611,10.84 L22.2185431,9.85866667 L24.1465513,11.792 L23.1772212,12.7653333 Z" id="Shape-Copy-3" fill="#6D8086" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

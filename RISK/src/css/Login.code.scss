@@ -1,0 +1,106 @@
+@import "./_config";
+
+.code {
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    margin: 110px auto;
+  }
+
+  h1 {
+    background-image: url("../img/login_code.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 58px;
+    padding: 90px 0 0 0;
+    font-size: 42px;
+    color: $grey65;
+    margin: 0 auto 10px auto;
+    font-weight: 300;
+    line-height: 46px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $blue2c;
+    margin: 0px auto 25px auto;
+    font-weight: 400;
+  }
+
+  .inputs {
+    display: inline-flex;
+    justify-content: space-around;
+
+    input.number {
+      width: 45px;
+      height: 60px;
+      margin: 7px;
+      padding: 10px;
+      font-size: 40px;
+      line-height: 40px;
+      color: $black;
+      background: $white;
+      border-radius: 4px;
+      border: 1px solid $greyc7;
+      text-align: center;
+      font-weight: 300;
+
+      @include media-breakpoint-up(lg) {
+        width: 50px;
+      }
+
+      &:focus {
+        border: 1px solid $greyc7;
+        box-shadow: none;
+        outline: none;
+      }
+
+      &.valid {
+        border: 1px solid $blue2c;
+      }
+
+      &.invalid {
+        border: 1px solid $redde;
+      }
+    }
+  }
+
+  .error {
+    color: $redde;
+    margin: auto 0;
+    padding: 15px 0 0 0;
+  }
+
+  .resend {
+    color: $blue0c;
+    margin: auto 0;
+    margin: 15px auto 0 auto;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+    background-image: url("../img/ico_back_blue.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 12px;
+    display: inline-block;
+  }
+
+  .sending {
+    color: $grey65;
+    margin: auto 0;
+    margin: 15px auto 0 auto;
+    padding: 0 0 0 0px;
+    display: inline-block;
+  }
+
+  .back {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: $grey65;
+    margin: 100px 0 0 0;
+    display: inline-block;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../../css/_config";
+
+.plan-loader-menu {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 410px;
+  height: 500px;
+  border: 1px solid $greye8;
+  background-color: $white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0px 12px 32px -8px rgba(0, 0, 5, 0.15);
+  margin: 0 15px auto 0px;
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 20px);
+    margin: 0 10px auto 0px;
+  }
+
+  .title {
+    height: 47px;
+    background-color: $greyf6;
+    display: inline-flex;
+    width: 100%;
+  }
+}
+
+.plan-loader-text {
+  width: calc(
+    100vw - 410px - 105px - 2px
+  ); // 410px menu, 105px margins + scrollbar
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: left;
+  border: 1px solid $greye8;
+  background-color: $white;
+  height: 500px;
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 20px);
+    margin: 0 10px auto 0px;
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>01 Components / 999 Miscellaneous / 04 Loaders / 01 Circle / 02 Large</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M12,5 C8.13400675,5 5,8.13400675 5,12 C5,15.8659932 8.13400675,19 12,19 C15.8659932,19 19,15.8659932 19,12 C19,8.13400675 15.8659932,5 12,5 Z" id="path-1"></path>
+    </defs>
+    <g id="REZILIO-PLANS-v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login-process-/-Password-visible-Copy-4" transform="translate(-286.000000, -579.000000)">
+            <g id="01-Components-/-999-Miscellaneous-/-04-Loaders-/-01-Circle-/-02-Large" transform="translate(284.000000, 577.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Base" fill="#D7E1FE" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path d="M12,2 C17.5228571,2 22,6.47714286 22,12 L22,12 L19,12 L19,12 C19,8.13400675 15.8659932,5 12,5 Z" id="Progress" fill="#2C5DE5" fill-rule="evenodd" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

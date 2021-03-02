@@ -1,0 +1,66 @@
+@import "../../css/_config";
+$path: "../../";
+
+.two_panels {
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+
+  .side_wrapper {
+    margin: 0 0 auto 0;
+    padding: 20px 0;
+  }
+
+  .main_wrapper {
+    background-color: $blue2c;
+    background-image: url($path + "img/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .bcg {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .top {
+      display: inline-flex;
+      align-self: flex-end;
+
+      // uses Languages.js component
+    }
+
+    .center {
+      width: 200px;
+      height: 70px;
+      background-color: transparent;
+      background-image: url($path + "img/logo_white_center.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 175px auto;
+    }
+
+    .bottom {
+    }
+  }
+
+  input {
+    width: 300px;
+    margin: auto;
+  }
+
+  button {
+    width: 300px;
+    margin: auto;
+  }
+}

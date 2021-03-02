@@ -1,0 +1,236 @@
+@import "../../../../css/_config";
+
+.plan-toolbar {
+  background-color: $greyfa;
+  display: inline-flex;
+  width: 100%;
+  padding: 15px 45px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  .home-button {
+    background-image: url("../../../../img/ico_plan_menu_black.svg");
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    line-height: 40px;
+    background-color: $white;
+    border-radius: 4px;
+    font-size: 14px;
+    color: $grey03;
+    padding: 0 15px 0 40px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 5, 0.15);
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .shortcuts {
+    position: relative;
+    display: inline-flex;
+    width: calc(100vw - 87px - 90px);
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 1250px;
+    }
+
+    .shortcut {
+      width: calc((100% - 100px) / 5);
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 3px 10px 15px;
+      height: 40px;
+      font-size: 14px;
+      color: $greya1;
+      letter-spacing: 0;
+      line-height: 20px;
+      border-radius: 4px;
+
+      &:not(.disabled) {
+        cursor: pointer;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+
+      &:first-of-type {
+        margin-left: 65px;
+        margin-right: 20px;
+      }
+
+      &:last-of-type {
+        .context-menu {
+          right: 0px;
+        }
+      }
+
+      &.drag-over {
+        background: $greye7;
+      }
+
+      &.edit-mode {
+        background-color: $white;
+        box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+        color: $grey3d;
+      }
+
+      &.clicked {
+        background-color: $white;
+        box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+      }
+
+      &:not(.clicked):not(.edit-mode):not(:hover):not(.broken-link) {
+        .shortcut-icon {
+          filter: grayscale(100%);
+        }
+      }
+
+      &:hover:not(.disabled):not(.broken-link) {
+        box-shadow: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+        color: $grey3d;
+
+        .three-dot {
+          background-image: url("../../../../img/stacked_dots_single_grey_dark.svg");
+        }
+      }
+
+      &.disabled {
+        .three-dot {
+          &:hover {
+            background-image: none;
+            background: transparent;
+            border: none;
+          }
+        }
+      }
+
+      &.broken-link {
+        box-shadow: none !important;
+
+        &:hover:not(.edit-mode) {
+          background-color: $greyf1;
+          font-weight: 600;
+        }
+
+        &:not(:hover):not(.edit-mode) {
+          background: transparent !important;
+        }
+
+        &.edit-mode {
+          background-color: $greyf1;
+          color: $greya1;
+          font-weight: 600;
+        }
+
+        .shortcut-icon {
+          background-image: url("../../../../img/broken_link.svg");
+          background-size: 16px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        .shortcut-title {
+          text-decoration: line-through;
+        }
+
+        .three-dot {
+          &.edit-mode {
+            background-color: $greyd8;
+            border: 1px solid $greyd6;
+            border-radius: 4px;
+            background-image: url("../../../../img/stacked_dots_single_grey_dark.svg");
+          }
+        }
+
+        .context-menu {
+          bottom: -50%;
+          &:hover {
+            background-color: $blueee;
+          }
+        }
+      }
+
+      .shortcut-icon {
+        position: absolute;
+        max-width: 16px;
+        height: 16px;
+        left: 16px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+
+        img {
+          max-width: 16px;
+        }
+      }
+
+      .shortcut-title {
+        position: absolute;
+        left: calc(15px + 16px + 7px);
+        max-width: calc(100% - 15px - 14px - 7px - 18px - 8px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+
+        &:first-letter {
+          text-transform: capitalize;
+        }
+      }
+
+      .three-dot {
+        position: absolute;
+        right: 8px;
+
+        &:hover {
+          background-image: url("../../../../img/stacked_dots_single_grey_dark.svg");
+          background-color: $greyd8;
+          border: 1px solid $greyd6;
+          border-radius: 4px;
+        }
+
+        &.edit-mode {
+          background-image: url("../../../../img/stacked_dots_single_grey_dark.svg");
+          background-color: $greyd8;
+          border: 1px solid $greyd6;
+          border-radius: 4px;
+        }
+      }
+
+      .context-menu {
+        position: absolute;
+        width: 127px;
+        bottom: -100%;
+        right: -107px;
+        border: 1px solid $greyd6;
+
+        ul {
+          width: 125px;
+          padding: 1px 0 1px 0;
+
+          li {
+            padding: 0 11px 0 6px;
+            width: 100%;
+
+            .context-menu-icon {
+              height: 12px;
+              width: 12px;
+            }
+
+            span {
+              padding-left: 11px;
+            }
+
+            &:hover {
+              background-color: $blueee;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "./_config";
+
+.login_e3b {
+  // uses a random hash to prevent apply styling from other modules
+  .logo {
+    height: 70px;
+    background-color: transparent;
+    background-image: url("../img/logo_blue_center.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 175px auto;
+    margin: 50px auto 50px auto;
+  }
+
+  // form (step 1)
+  @import "./Login.form";
+
+  // MFP (step 2)
+  @import "./Login.code";
+
+  // Secutity question (step 2)
+
+  // Welcome (step 3)
+  @import "./Login.welcome";
+}

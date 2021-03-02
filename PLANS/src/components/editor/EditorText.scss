@@ -1,0 +1,54 @@
+@import "../../css/_config";
+
+// TEXT EDITOR STYLING
+// Note: might be excluded to standalone stylesheet later on
+.editor-text {
+  text-align: left;
+
+  @include media-breakpoint-down(md) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  p {
+  }
+
+  a {
+    color: $blue0c;
+    text-decoration: none;
+
+    &:hover {
+      color: #0c37ce;
+      text-decoration: underline;
+    }
+  }
+
+  span.fr-emoticon.fr-emoticon-img {
+    line-height: 1;
+    vertical-align: middle;
+    background-repeat: no-repeat !important;
+    font-size: inherit;
+    height: 1em;
+    width: 1em;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: -0.1em 0.1em 0.1em;
+  }
+
+  &.fr-view {
+    padding: 0 !important;
+
+    .fr-video.fr-dvb {
+      display: initial;
+      clear: initial;
+    }
+
+    .fr-file::after {
+      display: none;
+    }
+  }
+}

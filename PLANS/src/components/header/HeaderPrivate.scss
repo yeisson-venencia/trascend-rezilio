@@ -1,0 +1,433 @@
+@import "../../css/_config";
+$path: "../../";
+
+.header-private {
+  height: 50px;
+  padding: 0px 0px 0 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $greyd6;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0px 0px 0 38px;
+    height: 64px;
+  }
+
+  .spacer {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      background: transparent;
+      display: block;
+      width: 40px;
+      height: 64px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 80px;
+    }
+  }
+
+  .line {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      margin: 0 0 0 15px;
+      padding: 0 0 0 15px;
+      height: 64px;
+      border-left: 1px solid $greyd6;
+      background: transparent;
+    }
+  }
+
+  h1.logo {
+    text-indent: -9999px;
+    width: 52px;
+    height: 50px;
+    background-image: url($path + "img/logo_r_blue.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    float: left;
+    margin: 0 auto 0 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      width: 44px;
+      height: 64px;
+      background-size: 26px auto;
+    }
+
+    a {
+      width: 52px;
+      height: 50px;
+      display: block;
+
+      @include media-breakpoint-up(lg) {
+        width: 44px;
+        height: 64px;
+        background-size: 26px auto;
+      }
+    }
+
+    img.px {
+      width: 1px;
+      height: 1px;
+    }
+  }
+
+  .datetime {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      color: $grey3b;
+      font-size: 12px;
+      font-weight: 400;
+      display: inline-flex;
+      line-height: 64px;
+    }
+
+    .space {
+      width: 25px;
+    }
+
+    span {
+      color: $grey8f;
+      display: inline-block;
+      padding: 0 0px;
+    }
+  }
+
+  .org {
+    display: inline-flex;
+    max-width: 50vw;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-flex;
+    }
+
+    .icon {
+      background-image: url($path + "img/ico_organization_blue.svg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+      width: 30px;
+      height: 50px;
+      margin: 0px 5px 0px 0;
+
+      @include media-breakpoint-up(lg) {
+        height: 64px;
+      }
+    }
+
+    .name {
+      @include ellipsis;
+      line-height: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $grey3d;
+      max-width: 70%;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 200px;
+        line-height: 64px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .user {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 25px 0 0;
+      position: relative;
+      float: right;
+      display: inline-flex;
+    }
+
+    &.active {
+    }
+
+    .icon {
+      width: 20px;
+      height: 64px;
+      margin: 0px 5px 0px 0;
+      background-image: url($path + "img/ico_user_blue.svg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+      cursor: pointer;
+    }
+
+    .text {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      cursor: pointer;
+
+      .name {
+        @include ellipsis;
+        line-height: 20px;
+        font-size: 14px;
+        color: $grey3d;
+        margin: 22px 0 0 0;
+        max-width: 200px;
+        font-weight: 600;
+      }
+
+      .mission {
+        @include ellipsis;
+        line-height: 12px;
+        font-size: 12px;
+        color: $grey6d;
+        text-align: left;
+        max-width: 200px;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      z-index: 99;
+      display: none;
+      border: 1px solid $greyc7;
+      border-radius: 4px;
+      background: $white;
+      padding: 5px 0px;
+      min-width: 190px;
+
+      &.active {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item,
+      a.item {
+        padding: 5px 10px 5px 45px;
+        background-position: 15px center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: $black;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $blueee;
+        }
+
+        &.preferences {
+          background-image: url($path + "img/menu_preferences_grey.svg");
+        }
+        &.settings {
+          background-image: url($path + "img/menu_docs_grey.svg");
+        }
+        &.profile {
+          background-image: url($path + "img/menu_settings_grey.svg");
+        }
+        &.docs {
+          background-image: url($path + "img/menu_docs_grey.svg");
+        }
+        &.admin {
+          background-image: url($path + "img/menu_admin_grey.svg");
+        }
+        &.logout {
+          margin: 15px 0 0 0;
+          background-image: url($path + "img/menu_logout_grey.svg");
+        }
+      }
+    }
+  }
+
+  .lang-wrapper {
+    color: $blue2c;
+    font-size: 12px;
+    line-height: 50px;
+    float: right;
+    margin: 0 0px 0 0;
+    width: 100px;
+    flex-shrink: 0;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      color: $grey3d;
+      margin: 0 10px;
+      cursor: pointer;
+      line-height: 64px;
+      margin: 0 20px 0 0;
+    }
+
+    .lang {
+      font-weight: 400;
+      font-size: 12px;
+      cursor: pointer;
+      color: $blue2c;
+      width: 100px;
+      white-space: nowrap;
+
+      @include media-breakpoint-up(lg) {
+        color: $grey65;
+      }
+    }
+
+    .lang-open {
+      background: $white;
+      margin-top: 4px;
+      font-weight: 600;
+      font-weight: 400;
+      font-size: 12px;
+      z-index: 99;
+      width: 100px;
+      overflow: visible;
+      position: relative;
+      display: inline-flex;
+      flex-direction: column;
+      white-space: nowrap;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 5, 0.15);
+      border-radius: 4px;
+
+      .item {
+        cursor: pointer;
+        color: $greya1;
+        line-height: 24px;
+        padding: 5px 15px;
+
+        &.current {
+          cursor: default;
+          color: $greya1;
+
+          &:hover {
+            color: $greya1;
+          }
+        }
+
+        &.active,
+        &:hover {
+          color: $blue2c;
+        }
+      }
+    }
+  }
+
+  .products {
+    display: none;
+    background-color: $white;
+    float: right;
+    cursor: pointer;
+    align-items: center;
+
+    .products-toggler {
+      background-image: url($path + "img/menu_products_black.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 4px;
+
+      &.active,
+      &:hover {
+        background-color: $greyf1;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      width: 80px;
+    }
+
+    &.active {
+    }
+  }
+
+  .products,
+  .mobile-products {
+    .menu {
+      position: absolute;
+      top: 56px;
+      right: 15px;
+      z-index: 99;
+      background: $white;
+      overflow: hidden;
+      border: 1px solid $greyd6;
+      border-radius: 20px;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+      padding: 10px 5px;
+      display: none;
+
+      &.active {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item {
+        padding: 5px 15px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        color: $black;
+        width: 100%;
+        text-align: center;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: #f0fbff;
+
+          a {
+            color: $blue0c;
+          }
+        }
+
+        &.logbook a .module-logo {
+          background-image: url($path + "img/menu_logbook_color.svg");
+          background-color: $white;
+          background-size: 30px auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        &.plansv2 a .module-logo {
+          background-color: #fff7d6;
+        }
+
+        a {
+          display: flex;
+          flex-direction: row;
+          color: $grey3d;
+          font-size: 14px;
+          font-weight: 200;
+          text-decoration: none;
+          justify-content: flex-end;
+          align-items: center;
+
+          .module-logo {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            border: 1px solid $white;
+          }
+        }
+      }
+    }
+  }
+
+  @import "./HeaderMenu.mobile";
+}

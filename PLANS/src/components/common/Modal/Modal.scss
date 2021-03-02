@@ -1,0 +1,78 @@
+@import "../../../css/_config";
+
+.modal {
+  align-content: flex-start;
+  background: $greyf1;
+  border-radius: 4px;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  left: 50%;
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 90px;
+  padding: 15px 15px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  z-index: 999;
+
+  .modal-header {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 0;
+    width: 100%;
+
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 0 0 15px;
+    }
+
+    .modal-header-icon {
+      width: 15px;
+      height: 15px;
+
+      &.locked {
+        background-image: url("../../../img/ico_padlock_red.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px auto;
+      }
+    }
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-image: url("../../../img/close_black.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 12px auto;
+      border-radius: 13px;
+      cursor: pointer;
+      height: 20px;
+      text-indent: -9999px;
+      width: 20px;
+
+      &:hover {
+        background-color: $greyf1;
+      }
+    }
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 15px 15px;
+    width: 100%;
+
+    .side-30 {
+      padding: 0px 15px;
+    }
+  }
+}

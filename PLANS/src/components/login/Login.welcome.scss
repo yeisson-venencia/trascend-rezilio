@@ -1,0 +1,33 @@
+@import "../../css/_config";
+$path: "../../";
+
+.welcome {
+  width: 350px;
+  min-height: 500px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    margin: 130px auto 50px;
+  }
+
+  h1 {
+    background-image: url($path + "/img/login_processing.svg");
+    background-position: calc(50% - 25px) top;
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    padding: 240px 0 0 0;
+    font-size: 48px;
+    color: $blue2c;
+    margin: 0 auto 10px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    font-size: 20px;
+    color: $grey65;
+    margin: 0px auto 20px auto;
+    font-weight: 400;
+  }
+}

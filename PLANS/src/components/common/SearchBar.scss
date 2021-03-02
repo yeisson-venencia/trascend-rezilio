@@ -1,0 +1,65 @@
+@import "../../css/_config";
+$path: "../../";
+
+.search-bar {
+  text-align: right;
+  position: relative;
+  margin: auto 0 auto 0px;
+  width: 350px;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  input {
+    height: 40px;
+    width: 350px;
+    font-size: 16px;
+    color: $grey8f;
+    border-radius: 5px;
+    border: 1px solid $greye4;
+    padding: 0px 30px 0 35px;
+    outline: none;
+    background-color: $white;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &.search {
+      background-image: url($path + "img/ico_search_black.svg");
+      background-position: left 8px center;
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+    }
+
+    &.active {
+      color: $grey65;
+    }
+
+    &:focus {
+      border: 1px solid $blue0c;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0px;
+
+    &.close {
+      background-image: url($path + "img/close_grey.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 12px auto;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../css/_config.scss";
+
+.toggle {
+  display: inline-flex;
+  padding: 5px 15px 4px 15px;
+  border-radius: 4px;
+  cursor: default;
+
+  &:hover {
+    background-color: $greyf1;
+  }
+
+  .toggle-btn {
+    width: 36px;
+    height: 20px;
+    background-size: 36px 20px;
+    background-image: url("../../img/toggle_switch_off.svg");
+    cursor: pointer;
+
+    &.on {
+      background-image: url("../../img/toggle_switch_on.svg");
+    }
+  }
+
+  .toggle-label {
+    font-size: 14px;
+    color: $grey3d;
+    text-align: left;
+    margin-left: 8px;
+  }
+}

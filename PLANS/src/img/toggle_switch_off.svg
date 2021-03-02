@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="20px" viewBox="0 0 36 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <path d="M1001,212 L1421,212 C1423.20914,212 1425,213.790861 1425,216 L1425,236 L1425,236 L997,236 L997,216 C997,213.790861 998.790861,212 1001,212 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Page-/-Sub-Section-/-Draft-Submited" transform="translate(-1271.000000, -214.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <path stroke="#E8E8E8" d="M1421,212.5 C1421.9665,212.5 1422.8415,212.891751 1423.47487,213.525126 C1424.10825,214.158502 1424.5,215.033502 1424.5,216 L1424.5,216 L1424.5,235.5 L997.5,235.5 L997.5,216 C997.5,215.033502 997.891751,214.158502 998.525126,213.525126 C999.158502,212.891751 1000.0335,212.5 1001,212.5 L1001,212.5 Z"></path>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(1271.000000, 214.000000)">
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="0" width="36" height="20" rx="10"></rect>
+                    <ellipse id="Oval" fill="#FFFFFF" cx="9.94736842" cy="10" rx="7.10526316" ry="7.14285714"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

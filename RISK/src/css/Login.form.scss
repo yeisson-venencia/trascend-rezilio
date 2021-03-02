@@ -1,0 +1,201 @@
+@import "./_config";
+
+.form {
+  width: 100vw;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    width: 390px;
+  }
+
+  h1 {
+    font-weight: 300;
+    color: $grey65;
+    font-size: 42px;
+    margin: 0px auto 50px;
+
+    @include media-breakpoint-up(sm) {
+      margin: 130px auto 50px;
+    }
+
+    &.inactivity {
+      background-image: url("../img/ico_timeout_blue.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 50px auto;
+      font-weight: 300;
+      color: $blue2c;
+      font-size: 36px;
+      margin: 0 0 30px 0;
+      padding: 60px 0 0 0;
+    }
+  }
+
+  p.inactivity-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey65;
+    margin: 0 0 30px 0;
+  }
+
+  .offset {
+    margin: 0 0 0 45px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 0 40px;
+    }
+  }
+
+  .form-label {
+    font-size: 16px;
+    color: $grey65;
+    text-align: left;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+
+  input.form-input {
+    background-color: $white;
+    border: 1px solid $greyc7;
+    height: 48px;
+    line-height: 48px;
+    line-height: normal;
+    font-size: 16px;
+    color: $black;
+    border-radius: 4px;
+    width: calc(100% - 45px);
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    margin: 0 16px 5px 0;
+
+    @include media-breakpoint-up(sm) {
+      width: 310px;
+    }
+
+    &:-webkit-autofill,
+    &:-internal-autofill-selected {
+      background-color: $white !important;
+      -webkit-box-shadow: 0 0 0 1000px $white inset !important;
+    }
+
+    &:focus,
+    &.filled {
+      border: 1px solid $blue2c;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &.invalid {
+      border: 1px solid red;
+    }
+
+    &.username {
+      background-image: url("../img/ico_username_black.svg");
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      margin: 0 45px 40px 0;
+
+      @include media-breakpoint-up(lg) {
+        width: 310px;
+        margin: 0 40px 40px 0;
+      }
+    }
+
+    &.password {
+      background-image: url("../img/ico_password_black.svg");
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      float: left;
+      margin: 0 10px 5px 0;
+    }
+  }
+
+  .toggle-password {
+    width: 24px;
+    height: 24px;
+    margin: 12px 0;
+    background-image: url("../img/ico_eye_close_grey.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    cursor: pointer;
+    float: left;
+
+    &.filled {
+      background-image: url("../img/ico_eye_close_black.svg");
+    }
+
+    &.open {
+      background-image: url("../img/ico_eye_open_blue.svg");
+    }
+  }
+
+  .forgot-password {
+    font-size: 16px;
+    clear: both;
+    text-align: left;
+
+    a {
+      color: $blue91;
+      text-decoration: none;
+
+      &:hover {
+        color: $blue0c;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .error {
+    color: $redde;
+    padding: 10px 0 0 0;
+
+    @include media-breakpoint-up(lg) {
+      background-image: url("../img/error_red.svg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      padding: 30px 0 0 0;
+      height: 80px;
+    }
+  }
+
+  .error-space {
+    @include media-breakpoint-up(lg) {
+      height: 80px;
+    }
+  }
+
+  button.submit {
+    width: auto;
+    background: $blue2c;
+    height: 36px;
+    padding: 0 30px;
+    color: $white;
+    border-radius: 4px;
+    border: 1px solid $blue2c;
+    font-weight: 500;
+    margin: 20px auto 0px auto;
+
+    @include media-breakpoint-up(lg) {
+      margin: 10px auto 0px auto;
+    }
+
+    &:focus,
+    &:hover {
+      border: 1px solid $blue23;
+      background: $blue23;
+      outline: none;
+    }
+  }
+
+  .loader-wrapper {
+    margin: 40px auto 40px auto;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 auto 0 auto;
+    }
+  }
+}

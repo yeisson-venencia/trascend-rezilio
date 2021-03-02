@@ -1,0 +1,303 @@
+@import "../../../css/_config";
+
+.plan-description {
+  position: relative;
+  width: calc(
+    100vw - 410px - 105px - 2px
+  ); // 410px menu, 105px margins + scrollbar
+  min-width: 600px;
+  text-align: left;
+  border: 1px solid $greye8;
+  background-color: $white;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 20px);
+    min-width: calc(100vw - 20px);
+    margin: 0 10px 100px 0px;
+  }
+
+  .title {
+    line-height: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content auto max-content min-content;
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px 0 15px;
+
+    .icon {
+      min-width: 16px;
+      font-size: 16px;
+      line-height: 30px;
+      margin: 0 10px 0 30px;
+
+      @include media-breakpoint-down(md) {
+        margin: 0 10px 0 0px;
+      }
+
+      img {
+        width: 16px;
+      }
+    }
+
+    .item {
+      @include ellipsis;
+      font-size: 22px;
+      color: $blue39;
+      font-weight: 600;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
+    }
+    .translation {
+      justify-self: end;
+      display: inline-flex;
+      align-items: center;
+      padding: 1px;
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        width: 36px;
+        margin-left: 5px;
+        cursor: pointer;
+
+        .icon {
+          width: 22px;
+          height: 22px;
+          margin: 0;
+          background-image: url("../../../img/ico_globe_grey.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 22px auto;
+        }
+      }
+
+      &.on {
+        .btn {
+          .icon {
+            background-image: url("../../../img/ico_globe_blue.svg");
+          }
+        }
+      }
+
+      &:hover,
+      &.on {
+        .btn {
+          background-color: $greyf1;
+          border-radius: 4px;
+        }
+      }
+
+      &:hover:not(.on) {
+        .icon {
+          background-image: url("../../../img/ico_globe_black.svg");
+        }
+      }
+
+      .warning {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        height: 22px;
+        background-color: $redffe;
+        border-radius: 4px;
+        color: $redff5;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0 14px 0 14px;
+
+        .link {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      #translation-tooltip {
+        background-color: $black;
+        opacity: 1;
+        color: $white;
+        width: 160px;
+        height: auto;
+        text-align: center;
+        border: none;
+
+        &:before {
+          border-color: transparent;
+        }
+
+        &:after {
+          content: "";
+          left: calc(100% - 36px / 2);
+          bottom: -5px;
+          border-top: 10px solid $black !important;
+          border-right: 10px solid transparent !important;
+          border-left: 10px solid transparent !important;
+        }
+      }
+    }
+
+    .three-dot {
+      height: 24px;
+      min-width: 30px;
+      background-image: url("../../../img/stacked_dots_single_large_grey.svg");
+      justify-self: end;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    .context-menu {
+      position: absolute;
+      min-width: 125px;
+      border: 1px solid $greye8;
+      top: 45px;
+      right: 8px;
+      padding: 0;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      ul {
+        width: 100%;
+        padding: 4px 0 5px 0px;
+      }
+      li {
+        width: 100%;
+        height: 24px;
+        padding: 0 26px 0 9px;
+
+        &:hover {
+          background-color: $greye8;
+        }
+
+        .context-menu-icon {
+          height: 16px;
+          width: 16px;
+        }
+
+        span:first-of-type {
+          height: 24px;
+          line-height: 24px;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  .hr {
+    width: 100%;
+    border-top: 1px solid $greyf1;
+  }
+
+  .text {
+    margin: 15px 15px 100px 45px;
+    max-width: 700px;
+    min-height: 500px;
+
+    @include media-breakpoint-down(md) {
+      margin: 10px 10px 100px 10px;
+    }
+  }
+}
+
+#modal {
+  div {
+    .warning {
+      .modal {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 530px;
+        height: 500px;
+        border-radius: 8px !important;
+        padding: 0;
+
+        .modal-body {
+          padding: 0;
+          height: 100%;
+          border-radius: 8px;
+          background-color: $white;
+          padding-bottom: 37px;
+
+          .header {
+            display: inline-flex;
+            align-items: center;
+            font-size: 22px;
+            color: $redff5;
+            background-color: $redffe;
+            height: 60px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            padding: 18px 28px 18px 19px;
+
+            .icon {
+              width: 26px;
+              height: 26px;
+              background-image: url("../../../img/ico_warning_red.svg");
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: 24px auto;
+              margin-right: 14px;
+            }
+          }
+
+          .text {
+            text-align: left;
+            font-size: 16px;
+            padding: 13px 36px 0 19px;
+            overflow-y: scroll;
+            height: calc(100% - 60px);
+          }
+
+          .action-button {
+            height: 40px;
+            width: auto;
+            background-color: $blue2c;
+            margin: auto;
+            padding: 10px 28px 10px 28px;
+            margin-top: 41px;
+
+            .action-button-text {
+              padding: 0;
+            }
+
+            .action-button-icon {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div {
+    .translation-edit {
+      .modal {
+        .modal-header-text {
+          color: $redff5;
+        }
+
+        .modal-body {
+          .button {
+            height: 30px;
+            max-width: 20%;
+            background-color: $blue0c;
+            border: none;
+            border-radius: 4px;
+            color: $white;
+            padding: 5px 2px 5px 3px;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}

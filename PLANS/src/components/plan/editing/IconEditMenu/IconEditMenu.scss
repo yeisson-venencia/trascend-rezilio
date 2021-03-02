@@ -1,0 +1,134 @@
+@import "../../../../../css/_config";
+
+.icon-edit-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+  height: 483px;
+  z-index: 999;
+  background: $white;
+  border: 1px solid $greyd6;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 12px 10px 8px;
+
+  .icon-edit-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .icon-edit-color-title,
+    .icon-edit-icon-title {
+      font-size: 16px;
+      color: $grey3d;
+      padding: 5px;
+    }
+
+    .icon-edit-close {
+      position: absolute;
+      top: 12px;
+      right: 11px;
+      width: 14px;
+      height: 14px;
+      border-radius: 13px;
+      text-indent: -9999px;
+      background-image: url("../../../../../img/close_24_grey.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 14px auto;
+      cursor: pointer;
+    }
+
+    .icon-delete-btn {
+      border: none;
+      outline: none;
+      width: 94px;
+      font-size: 14px;
+      color: $greybd;
+      background-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon-delete-btn-icon {
+        width: 16px;
+        height: 20px;
+        background-image: url("../../../../../img/delete_bin_grey.svg");
+        background-size: 16px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .color-circles {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 25px);
+    column-gap: 10px;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    width: 100%;
+    margin-bottom: 22px;
+
+    .color-circle {
+      &:first-of-type {
+        border: dotted 1px $grey97;
+      }
+
+      &:nth-of-type(2) {
+        grid-column: span 9;
+      }
+
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+    }
+  }
+
+  .hr {
+    border-top: 1px solid $greyf1;
+    width: 355px;
+  }
+
+  .search-bar {
+    width: 196px;
+    height: 32px;
+    input {
+      width: 196px;
+      height: 32px;
+      font-size: 12px;
+    }
+  }
+
+  .select-icon {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .icon-download-btn {
+      border: none;
+      outline: none;
+      background: $btn-secondary-1;
+      border-radius: 4px;
+      color: $white;
+      width: 102px;
+      height: 32px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .icon-list {
+    display: inline-grid;
+    justify-items: center;
+    grid-template-columns: repeat(11, 1fr);
+    column-gap: 10px;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    width: 100%;
+    margin-top: 11px;
+  }
+}

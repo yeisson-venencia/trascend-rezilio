@@ -1,0 +1,169 @@
+@import "../../../../css/_config";
+
+.plan-edit {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 30px);
+  min-height: 550px;
+  width: 70vw;
+  top: 15px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  background-color: $white;
+  border: 1px solid $greye8;
+  border-radius: 8px;
+  z-index: 998;
+
+  .plan-edit-header {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 72px;
+    background-color: $greyf6;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 8px 8px 8px 32px;
+
+    span,
+    img {
+      margin: 0px 12px 0px 0px;
+    }
+
+    .plan-edit-title {
+      width: calc(100% - 130px - 24px);
+      height: 40px;
+      text-align: left;
+      padding: 0 10px 0 10px;
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+      color: $blue0c;
+      border: 0px;
+      letter-spacing: 0;
+      line-height: 40px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .plan-edit-close {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 130px;
+      height: 100%;
+
+      .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 16px;
+        height: 16px;
+        border-radius: 13px;
+        text-indent: -9999px;
+        background-image: url("../../../../img/close_grey_20.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px auto;
+
+        &:hover {
+          background-image: url("../../../../img/close_black_20.svg");
+        }
+      }
+    }
+  }
+
+  .plan-edit-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 30px 30px 30px;
+
+    .versioning-info {
+      flex: 0 0 28px;
+      height: 28px;
+      padding: 0 0 5px 0;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+
+      .versioning-info-current {
+        display: flex;
+        align-items: center;
+        height: 24px;
+        border: solid 1px $greydc;
+        border-style: dashed;
+        border-radius: 4px;
+        padding: 3px 15px 3px 15px;
+        margin-right: 5px;
+      }
+
+      .versioning-info-lang {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        width: 86px;
+        height: 24px;
+        background-color: $greend0;
+        border: 1px solid $greenb0;
+        border-radius: 4px;
+        color: $grey76;
+        padding: 1px 13.5px 1px 14.5px;
+      }
+
+      .versioning-info-icon {
+        width: 46px;
+        height: 32px;
+        background-image: url("../../../../img/ico_branch.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 29px auto;
+      }
+
+      .versioning-info-draft {
+        display: flex;
+        align-items: center;
+        color: $grey3d;
+        background-color: $greyf1;
+        height: 24px;
+        font-size: 12px;
+        border-radius: 4px;
+        padding: 1px 8px 1px 8px;
+
+        span:first-of-type {
+          font-weight: 600;
+          margin-right: 0.5em;
+        }
+
+        span:nth-of-type(2),
+        span:nth-of-type(3) {
+          margin-right: 0.5em;
+        }
+
+        .timestamp {
+          display: inline-flex;
+          justify-content: flex-end;
+          margin: 0;
+        }
+      }
+    }
+
+    .editor-wrapper {
+      flex: 1 1 auto;
+      height: 100%;
+      position: relative;
+    }
+
+    .action-btn-wrapper {
+      flex: 0 0 30px;
+      display: inline-flex;
+      margin-top: 20px;
+    }
+  }
+}

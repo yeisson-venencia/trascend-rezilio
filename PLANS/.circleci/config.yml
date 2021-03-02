@@ -1,0 +1,32 @@
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Setup Dependencies
+          command: yarn install
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run: # run tests
+          name: Run Tests
+          command: yarn test
+      - slack/status:
+          webhook: 'https://hooks.slack.com/services/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'
+          failure_message: '${CIRCLE_JOB} on ${CIRCLE_BRANCH} (${CIRCLE_BUILD_URL}, ${CIRCLE_USERNAME}) has failed!'
+          include_job_number_field: false
+          include_visit_job_action: false
+          success_message: '${CIRCLE_JOB} on ${CIRCLE_BRANCH} (${CIRCLE_BUILD_URL}, ${CIRCLE_USERNAME}) has succeeded!'
+
+orbs:
+  slack: circleci/slack@3.4.2
+version: 2.1
+workflows:
+  your-workflow:
+    jobs:
+      - build

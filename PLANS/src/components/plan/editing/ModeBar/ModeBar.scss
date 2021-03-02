@@ -1,0 +1,144 @@
+@import "../../../../css/_config";
+
+.mode-bar {
+  border: 1px solid $greye8;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0 0;
+  background: $greyf1;
+  color: $grey3d;
+  font-size: 12px;
+  line-height: 24px;
+  height: 24px;
+  width: 100%;
+  padding: 3px 10px 3px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  cursor: default;
+
+  .text {
+    color: $grey3d;
+  }
+
+  .icon {
+    background-size: auto 16px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 24px;
+    margin-right: 9px;
+  }
+
+  &.MODE_DRAFT,
+  &.MODE_REJECTED {
+    .text {
+      padding: 0 8px 0 0;
+    }
+
+    .button {
+      background: $blue0c;
+      color: $white;
+      padding: 0 5px;
+      border-radius: 9px;
+      line-height: 18px;
+      height: 18px;
+      margin: 0;
+      border: 0px solid $blue0c;
+      cursor: pointer;
+    }
+  }
+
+  &.MODE_DRAFT {
+    background: $greyf1;
+
+    .icon {
+      width: 20px;
+      background-image: url("../../../../img/ico_pencil_blue.svg");
+    }
+  }
+
+  &.MODE_REJECTED {
+    background: $bluecf;
+
+    .text {
+      color: $blue0c;
+    }
+
+    .icon {
+      width: 16px;
+      background-image: url("../../../../img/ico_ban_grey.svg");
+      animation: slide-up 10s ease-out infinite;
+    }
+
+    &:hover {
+      background: $bluea0;
+    }
+
+    @keyframes slide-up {
+      3% {
+        transform: translateY(-10px);
+      }
+
+      6% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &.MODE_PENDING {
+    background: $yellowf7;
+    min-width: 420px;
+    justify-content: flex-start;
+
+    .icon {
+      background-image: url("../../../../img/ico_sandwatch.svg");
+    }
+  }
+
+  &.MODE_LOCKED {
+    background: $greyf1;
+    color: $blue0c;
+
+    .icon {
+      width: 20px;
+      background-image: url("../../../../img/ico_padlock_red.svg");
+    }
+  }
+
+  .version-toggle {
+    width: 36px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    background-size: 36px 20px;
+    background-image: url("../../../../img/toggle_switch_off.svg");
+
+    &.on {
+      background-image: url("../../../../img/toggle_switch_on.svg");
+    }
+  }
+
+  .version-toggle-text {
+    line-height: 20px;
+    padding: 0 0 0 10px;
+    color: $grey6f;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  #mode-tooltip {
+    background-color: $black;
+    opacity: 1;
+    color: $white;
+    width: 292px;
+    text-align: center;
+    border: none;
+
+    &::before {
+      content: "";
+      border-top: 1px solid transparent;
+    }
+  }
+}

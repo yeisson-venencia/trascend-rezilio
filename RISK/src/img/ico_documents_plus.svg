@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="131px" viewBox="0 0 120 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>undraw_add_file2_gvbb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.9972224%" y1="100%" x2="49.9972224%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0056123%" y1="100%" x2="50.0056123%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding-00-/-Main" transform="translate(-665.000000, -245.000000)" fill-rule="nonzero">
+            <g id="undraw_add_file2_gvbb" transform="translate(665.000000, 245.000000)">
+                <path d="M68.2417582,105.687578 C68.2417582,97.1799749 76.6664835,89.3364115 85.1983516,89.3364115 C86.5054945,89.3364115 87.7730769,89.0076788 88.9895604,89.3101129 C89.006044,88.9386449 89.0159341,86.7558595 89.0159341,86.3811041 L89.0159341,0 L15.1648352,0 L0,15.5326223 L0,116.04266 L69.7252747,116.04266 C68.2252747,113.66921 68.2417582,108.702058 68.2417582,105.687578 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M66.9230769,107.331242 C66.9230769,96.7103283 75.5575853,88.1003764 86.2087912,88.1003764 C86.7906593,88.1003764 87.3626374,88.1283187 87.9362637,88.1776286 L87.9362637,43.5883187 L1.3978022,43.5883187 L1.3978022,114.070263 L68.1412088,114.070263 C67.333232,111.914924 66.9206191,109.632242 66.9230769,107.331242 Z" id="Path" fill="#FCFCFC"></path>
+                <polygon id="Path" fill="#FCFCFC" points="87.871978 44.2457842 1.13901099 44.2457842 1.13901099 15.5326223 15.1648352 0.904015056 87.871978 0.904015056"></polygon>
+                <rect id="Rectangle" fill="#E0E0E0" x="58.9434066" y="9.63022585" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="58.9434066" y="16.2048808" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="58.9434066" y="22.7795358" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="58.9434066" y="29.3541907" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="58.9434066" y="35.9288457" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="58.9434066" y="42.5035006" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="13.9648352" y="56.4746424" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="13.9648352" y="63.6311543" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#69F0AE" opacity="0.5" x="13.9648352" y="60.0528984" width="61.410989" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="13.9648352" y="73.7709159" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="13.9648352" y="80.9290715" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="13.9648352" y="77.3491719" width="61.410989" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="13.9648352" y="91.0688331" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="13.9648352" y="98.225345" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="13.9648352" y="94.6470891" width="50.3423077" height="1.78994981"></rect>
+                <polygon id="Path" fill="#6C63FF" points="51.0989011 46.1869511 8.24175824 46.1869511 8.24175824 8.87578419 9.72527473 7.06775408 13.1456044 7.06775408 51.0989011 7.06775408"></polygon>
+                <polygon id="Path" fill="url(#linearGradient-2)" points="0.809340659 15.8613551 15.4945055 15.8613551 15.4945055 0.575282309"></polygon>
+                <polygon id="Path" fill="#F5F5F5" points="1.13901099 15.5326223 15.1648352 15.5326223 15.1648352 0.904015056"></polygon>
+                <g id="Group" opacity="0.5" transform="translate(86.868132, 97.962359)" fill="url(#linearGradient-3)">
+                    <ellipse id="Oval" cx="16.6269231" cy="16.477729" rx="16.5049451" ry="16.458005"></ellipse>
+                </g>
+                <ellipse id="Oval" fill="#3AD29F" cx="103.495055" cy="114.440088" rx="15.4483516" ry="15.4044166"></ellipse>
+                <g id="Group" opacity="0.5" transform="translate(95.109890, 106.016311)" fill="url(#linearGradient-4)">
+                    <polygon id="Path" points="16.7208791 6.56643664 10.2461538 6.56643664 10.2461538 0.111769134 6.52417582 0.111769134 6.52417582 6.56643664 0.0494505495 6.56643664 0.0494505495 10.279473 6.52417582 10.279473 6.52417582 16.7357842 10.2461538 16.7357842 10.2461538 10.279473 16.7208791 10.279473"></polygon>
+                </g>
+                <rect id="Rectangle" fill="#FFFFFF" x="101.912637" y="107.373977" width="3.16483516" height="14.1305772"></rect>
+                <polygon id="Rectangle" fill="#FFFFFF" transform="translate(103.495879, 114.440088) rotate(90.000000) translate(-103.495879, -114.440088) " points="101.917962 107.354648 105.073796 107.354648 105.073796 121.525527 101.917962 121.525527"></polygon>
+                <path d="M85.5494505,113.084065 C85.5494505,104.576462 93.9741758,96.7328984 102.506044,96.7328984 C103.813187,96.7328984 105.080769,96.4041656 106.297253,96.7065997 C106.313736,96.3351317 106.323626,94.1523463 106.323626,93.777591 L106.323626,7.39648683 L32.4725275,7.39648683 L17.3076923,22.9291092 L17.3076923,123.439147 L87.032967,123.439147 C85.532967,121.065696 85.5494505,116.098545 85.5494505,113.084065 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M84.2307692,114.727729 C84.2307692,104.106815 92.8652776,95.4968632 103.516484,95.4968632 C104.098352,95.4968632 104.67033,95.5248055 105.243956,95.5741154 L105.243956,50.9848055 L18.7054945,50.9848055 L18.7054945,121.46675 L85.4489011,121.46675 C84.6409243,119.311411 84.2283114,117.028729 84.2307692,114.727729 L84.2307692,114.727729 Z" id="Path" fill="#FFFFFF"></path>
+                <polygon id="Path" fill="#FFFFFF" points="105.17967 51.642271 18.4467033 51.642271 18.4467033 22.9291092 32.4725275 8.30050188 105.17967 8.30050188"></polygon>
+                <rect id="Rectangle" fill="#E0E0E0" x="76.2510989" y="17.0267127" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="76.2510989" y="23.6013676" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="76.2510989" y="30.1760226" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="76.2510989" y="36.7506775" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="76.2510989" y="43.3253325" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="76.2510989" y="49.8999875" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="31.2725275" y="63.8711292" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="31.2725275" y="71.0276412" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#69F0AE" opacity="0.5" x="31.2725275" y="67.4493852" width="61.410989" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="31.2725275" y="81.1674028" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="31.2725275" y="88.3255583" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="31.2725275" y="84.7456587" width="61.410989" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#6C63FF" opacity="0.5" x="31.2725275" y="98.4653199" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="31.2725275" y="105.621832" width="23.5269231" height="1.78994981"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="31.2725275" y="102.043576" width="50.3423077" height="1.78994981"></rect>
+                <polygon id="Path" fill="#6C63FF" points="68.4065934 53.5834379 25.5494505 53.5834379 25.5494505 16.272271 27.032967 14.4642409 30.4532967 14.4642409 68.4065934 14.4642409"></polygon>
+                <polygon id="Path" fill="url(#linearGradient-2)" points="18.117033 23.2578419 32.8021978 23.2578419 32.8021978 7.97176913"></polygon>
+                <polygon id="Path" fill="#FCFCFC" points="18.4467033 22.9291092 32.4725275 22.9291092 32.4725275 8.30050188"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

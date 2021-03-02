@@ -1,0 +1,38 @@
+{
+  "lang": "es",
+  "lang.full": "Español",
+
+  "lang.en.full": "English",
+  "lang.fr.full": "Français",
+  "lang.de.full": "Deutsch",
+  "lang.it.full": "Italiano",
+  "lang.es.full": "Español",
+
+  "locale": "es-ES",
+  "hello": "Hola Mundo",
+  "page.title": "ES Rezilio - Plans",
+
+  "login.welcome": "Hola",
+  "login.placeholder.username": "Username",
+  "login.placeholder.password": "Password",
+  "login.button.submit": "Login",
+  "login.error": "Unable to Sign in.  {br} Your username or password was incorrect.",
+  "login.forgot_password": "Forgot password?",
+
+  "login.welcome.title": "Welcome",
+  "login.welcome.text": "Loging you in...",
+
+  "login.code.title": "Authentification {br} 6-digit MFA code",
+  "login.code.text": "Please enter the code you received {br} on your device.",
+  "login.code.error": "Unable to Sign in. {br} If you need help please contact support.",
+
+  "footer.copyright": "© 2020 - {currentYear} Rezilio Technology. All rights reserved.",
+  "footer.copyright.private": "© 2020 - {currentYear} Rezilio Technology. {br} All rights reserved.",
+  "footer.privacypolicy": "Privacy Policy",
+  "footer.privacypolicy.link": "https://www.rezilio.com/en/privacy-policy",
+  "footer.terms": "Terms & Conditions",
+  "footer.terms.link": "https://www.rezilio.com/en/terms",
+  "footer.support": "Support",
+
+  "last": "last"
+}

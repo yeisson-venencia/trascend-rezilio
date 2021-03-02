@@ -1,0 +1,45 @@
+@import "./_config";
+
+// .createproject {
+//     background-color: #EFE9E9;
+//     height: 100vh;
+//     color: #989696;
+// }
+
+// .titleheader{
+//     color:#3E608B;
+// }
+
+// .selectform{
+//     color: #989696;
+//     padding: .5rem .5rem .5rem;
+// }
+
+// .submitbutton{
+//     background-color: #2A4365;
+//     color:white;
+//     font-size: small;
+//     font-weight: bold;
+//     padding:0 3rem 0 3rem;
+//     border-radius: 4px;
+// }
+
+.menuRezilio ul{
+    position: static;
+    display: block;
+}
+
+.fixMenu{
+    padding-left: 15px;
+    width: 85%;
+}
+
+
+.mapRoot {
+    height: 600px;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+#esri-ui {display:none !important;}

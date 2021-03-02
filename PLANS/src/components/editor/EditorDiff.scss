@@ -1,0 +1,35 @@
+@import "../../css/_config";
+
+// styling for diff HTML higlights that can be used anywhere
+.html-diff {
+  del {
+    background: $redffd;
+    text-decoration: line-through;
+  }
+
+  ins {
+    background: $greend0;
+    text-decoration: none;
+  }
+
+  .diffdel {
+  }
+
+  ins.diffmod {
+  }
+
+  ins.mod {
+  }
+
+  ins.diffins {
+  }
+
+  del.diffmod {
+  }
+
+  del.mod {
+  }
+
+  del.diffins {
+  }
+}

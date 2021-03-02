@@ -1,0 +1,242 @@
+@import "../../../css/_config";
+
+.close .plan-menu {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+
+  .menu-click-area {
+    // due to go back "onSectionClick"
+    bottom: 0px;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .title,
+  .items {
+    visibility: hidden;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hide .plan-menu {
+  display: none;
+}
+
+.show:first-child {
+  margin: 0 0 0 0px;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 0 45px;
+  }
+}
+
+.show-mobile {
+  padding: 0 0 0 10px;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+
+.show-mobile:first-child {
+  padding: 0 0 0 10px;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+    margin: 0 0 0 45px;
+  }
+}
+
+.hide-mobile .plan-menu {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.plan-menu {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 410px;
+  height: auto;
+  border: 1px solid $greye8;
+  background-color: $white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0px 12px 32px -8px rgba(0, 0, 5, 0.15);
+  margin: 0 15px auto 0px;
+  min-height: 100px;
+  transition: all 0.1s ease-out;
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 20px);
+    margin: 0;
+  }
+
+  .menu-click-area {
+    display: none;
+  }
+
+  .title {
+    font-size: 16px;
+    color: $grey3d;
+    font-weight: 600;
+    line-height: 47px;
+    height: 47px;
+    background-color: $greyf6;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover,
+    &.active {
+      background-color: $greyf1;
+      opacity: 1;
+
+      .item {
+        font-weight: 600;
+        color: $grey3d;
+      }
+    }
+
+    .icon {
+      width: 16px;
+      margin: 0 10px 0 18px;
+
+      @include media-breakpoint-down(md) {
+        margin: 0 10px 0 10px;
+      }
+
+      img {
+        width: 16px;
+      }
+    }
+
+    .item {
+      @include ellipsis;
+      margin: 0 15px 0 0;
+    }
+
+    .print {
+      margin: 0 8px 0 auto;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      background-color: transparent;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 18px auto;
+      background-image: url("../../../img/ico_print_grey.svg");
+
+      &:hover {
+        background-color: $greydc;
+        background-image: url("../../../img/ico_print_blue.svg");
+      }
+
+      &:active:hover {
+        background-image: url("../../../img/ico_print_blue2.svg");
+      }
+    }
+  }
+
+  .items {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: inline-flex;
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        margin: 0 0 8px 0;
+        padding: 0;
+        height: 30px;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+          background-color: $greyf1;
+
+          .icon {
+            opacity: 1;
+          }
+
+          .item {
+            font-weight: 600;
+            color: $grey3d;
+          }
+
+          .three-dot {
+            background-image: url("../../../img/stacked_dots_double_grey.svg");
+            cursor: move;
+
+            &.disabled {
+              background-image: url("../../../img/stacked_dots_double_red.svg");
+              cursor: default;
+            }
+          }
+        }
+
+        &:last-child {
+          margin: 0 0 40px 0;
+        }
+
+        .icon {
+          width: 16px;
+          margin: 0 10px 0 10px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.7;
+          font-size: 16px;
+          line-height: 30px;
+
+          @include media-breakpoint-down(md) {
+            margin: 0 10px 0 10px;
+          }
+
+          img {
+            width: 16px;
+          }
+        }
+
+        .item {
+          @include ellipsis;
+          line-height: 30px;
+          font-size: 14px;
+          color: $grey3d;
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+
+    .menu-tooltip {
+      &:before {
+        left: 20px !important;
+      }
+
+      &:after {
+        left: 20px !important;
+      }
+
+      &.disabled {
+        display: none;
+      }
+    }
+  }
+}

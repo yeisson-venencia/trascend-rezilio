@@ -1,0 +1,144 @@
+@import "./_config";
+
+.grid-actions {
+  // styling for buttons/ui on top of table
+}
+
+.grid-responsive {
+  overflow: hidden;
+  margin: 0 -4px; // due to #plans-table padding...
+  padding: 0 0 15px 0;
+
+  table.table {
+    width: 100%;
+    table-layout: fixed;
+
+    &#plans-table {
+      border-collapse: separate;
+      border-spacing: 0px 4px;
+      padding: 0 4px;
+    }
+
+    &#publication-table {
+      border-collapse: separate;
+      border-spacing: 0px 4px;
+      padding: 0 4px;
+    }
+
+    tr.header {
+      padding: 0;
+
+      th {
+        padding: 0 0px 0 0px;
+        //border: 1px solid red;
+
+        //general
+        .name {
+          background-image: url("../img/sort_default.svg");
+          background-position: right center;
+          background-repeat: no-repeat;
+          background-size: auto 12px;
+          border-radius: 5px;
+          color: $black;
+          cursor: pointer;
+          float: left;
+          margin: 0 0 0px 0;
+          padding: 5px 15px 5px 0px;
+          font-weight: 400;
+          font-size: 14px;
+          color: $grey65;
+
+          &.no-sort {
+            background-image: none;
+          }
+
+          &.active {
+            color: $grey20;
+          }
+
+          &.asc {
+            background-image: url("../img/sort_asc.svg");
+          }
+
+          &.desc {
+            background-image: url("../img/sort_desc.svg");
+          }
+        }
+
+        &:first-child {
+          padding: 0 5px 0 10px;
+        }
+
+        //per column widths, default
+        &.auto {
+          width: auto;
+        }
+
+        &.p10 {
+          width: 10%;
+        }
+
+        &.p40 {
+          width: 40%;
+        }
+
+        &.p60 {
+          width: 60%;
+        }
+
+        &.w100 {
+          width: 100px;
+        }
+
+        &.w150 {
+          width: 150px;
+        }
+
+        &.w200 {
+          width: 200px;
+        }
+
+        @include media-breakpoint-down(md) {
+          &.md-hide {
+            display: none;
+          }
+
+          &.md-p80 {
+            width: 80%;
+          }
+
+          &.md-p20 {
+            width: 20%;
+          }
+        }
+      }
+    } // header
+
+    tr {
+      td {
+        //border: 1px solid yellow;
+
+        &:first-child {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      }
+
+      td.noitems {
+        font-size: 16px;
+        padding: 90px 0px;
+        text-align: center;
+        color: $blue2c;
+      }
+
+      // styling for grouping
+      td.grouping {
+      }
+    } // tr
+  } // table.table
+} //.grid-responsive

@@ -1,0 +1,17 @@
+@import "../../css/_config";
+
+.publication-table {
+  width: 100%;
+}
+
+.publication-nodata {
+  background-image: url("../../img/ico_nodata_circle.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 160px auto;
+  padding: 180px 0 0 0;
+  color: $grey20;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

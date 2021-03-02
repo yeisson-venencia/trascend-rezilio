@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <defs>
+        <rect id="path-1" x="897" y="156" width="254" height="39" rx="4"></rect>
+        <filter x="-5.1%" y="-28.2%" width="110.2%" height="166.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4,0 L123,0 C125.209139,-4.05812251e-16 127,1.790861 127,4 L127,46 C127,48.209139 125.209139,50 123,50 L4,50 C1.790861,50 2.705415e-16,48.209139 0,46 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-3"></path>
+        <filter x="-33.1%" y="-60.0%" width="166.1%" height="268.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="12" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4,0 L123,0 C125.209139,-4.05812251e-16 127,1.790861 127,4 L127,46 C127,48.209139 125.209139,50 123,50 L4,50 C1.790861,50 2.705415e-16,48.209139 0,46 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-6"></path>
+        <path d="M4,0 L123,0 C125.209139,-4.05812251e-16 127,1.790861 127,4 L127,46 C127,48.209139 125.209139,50 123,50 L4,50 C1.790861,50 2.705415e-16,48.209139 0,46 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-8"></path>
+    </defs>
+    <g id="REZILIO-PLANS-v4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Page---Index-Copy-80" transform="translate(-1133.000000, -191.000000)">
+            <rect fill="#FAFBFD" x="0" y="0" width="1440" height="1877"></rect>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#eef3ff" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-6" transform="translate(1122.000000, 185.000000)">
+                <g id="01-Components-/-03-Dropdown-Menus-/-999-Primitives-/-01-Base">
+                    <g id="Shadow">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Style">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                            <use fill="#eef3ff" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                    <g id="Fill">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Style" fill="#eef3ff" xlink:href="#path-6"></use>
+                    </g>
+                    <g id="Stroke">
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <path stroke="#D6D6D6" d="M123,0.5 C123.966498,0.5 124.841498,0.891750844 125.474874,1.52512627 C126.108249,2.15850169 126.5,3.03350169 126.5,4 L126.5,4 L126.5,46 C126.5,46.9664983 126.108249,47.8414983 125.474874,48.4748737 C124.841498,49.1082492 123.966498,49.5 123,49.5 L123,49.5 L4,49.5 C3.03350169,49.5 2.15850169,49.1082492 1.52512627,48.4748737 C0.891750844,47.8414983 0.5,46.9664983 0.5,46 L0.5,46 L0.5,4 C0.5,3.03350169 0.891750844,2.15850169 1.52512627,1.52512627 C2.15850169,0.891750844 3.03350169,0.5 4,0.5 L4,0.5 Z"></path>
+                    </g>
+                </g>
+                <g id="01-Components-/-03-Dropdown-Menus-/-02-Left-Icon-/-01-Option-/-01-Normal-Copy" transform="translate(0.000000, 3.000000)"></g>
+                <g id="Icon" transform="translate(9.000000, 4.000000)" fill="#656565">
+                    <path d="M2,10 L2,13 C2,13.5522847 2.44771525,14 3,14 L6,14 C6.26521649,14 6.5195704,13.8946432 6.70710678,13.7071068 L13.7071068,6.70710678 C14.0976311,6.31658249 14.0976311,5.68341751 13.7071068,5.29289322 L10.7071068,2.29289322 C10.3165825,1.90236893 9.68341751,1.90236893 9.29289322,2.29289322 L2.29289322,9.29289322 C2.10535684,9.4804296 2,9.73478351 2,10 Z M4,10.4142136 L10,4.41421356 L11.5857864,6 L5.58578644,12 L4,12 L4,10.4142136 Z" id="Icon-Color"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
